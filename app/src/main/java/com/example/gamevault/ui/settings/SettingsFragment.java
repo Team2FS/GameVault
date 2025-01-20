@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
+import com.example.gamevault.ui.settings.credits.Credits;
 
 public class SettingsFragment extends Fragment {
 
@@ -59,11 +60,26 @@ public class SettingsFragment extends Fragment {
         });
         // Handle Credits button
         binding.Credits.setOnClickListener(v -> {
-            Log.d("SettingsFragment", "Credit Clicked");
+            Log.d("SettingsFragment", "Credit Clicke");
+            Intent intent = new Intent(requireContext(), Credits.class);
+            startActivity(intent);
         });
         // Handle Delete button
         binding.DeleteAccount.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Delete Clicked");
+            //Use Fire base to delete the user data then call the same logic to set shared preferences and show the log out view.
+            /*
+            *********************************************************************
+            * Logic for Fire base deleting account
+            *********************************************************************
+             */
+            SharedPreferences sharedpreferences = requireContext().getSharedPreferences("Profile", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedpreferences.edit();
+            editor.putBoolean("isLoggedIn", false);
+            editor.apply();
+            Intent intent = new Intent(requireContext(), loginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         });
         // Handle Log out button
         binding.LogOut.setOnClickListener(v -> {
