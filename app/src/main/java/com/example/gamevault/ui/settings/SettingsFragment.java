@@ -1,5 +1,8 @@
 package com.example.gamevault.ui.settings;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
+import com.example.gamevault.ui.login.loginActivity;
 
 public class SettingsFragment extends Fragment {
 
@@ -32,39 +36,46 @@ public class SettingsFragment extends Fragment {
         // Handle Button click using View Binding
         binding.ToggleTheme.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Toggle Theme Clicked");
-            // Handle toggle theme button
         });
+        // Handle manage profile button
         binding.ManageProfile.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Profile Clicked");
-            // Handle toggle theme button
         });
+        // Handle manage linked accounts button
         binding.ManageLinkedAccounts.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Linked Accounts Clicked");
-            // Handle toggle theme button
         });
+        // Handle manage camo progress button
         binding.ManageCamoProgress.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Camo Progress Clicked");
-            // Handle toggle theme button
         });
+        // Handle Suggest Feature button
         binding.SuggestFeature.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Suggest Feature Clicked");
-            // Handle toggle theme button
         });
+        // Handle Donate button
         binding.Donate.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Donate Clicked");
-            // Handle toggle theme button
         });
+        // Handle Credits button
         binding.Credits.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Credit Clicked");
-            // Handle toggle theme button
         });
+        // Handle Delete button
         binding.DeleteAccount.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Delete Clicked");
-            // Handle toggle theme button
         });
+        // Handle Log out button
         binding.LogOut.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Log Out Clicked");
-            // Handle toggle theme button
+            SharedPreferences sharedpreferences = requireContext().getSharedPreferences("Profile", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedpreferences.edit();
+            editor.putBoolean("isLoggedIn", false);
+            editor.apply();
+            Intent intent = new Intent(requireContext(), loginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+
         });
 
         return root;
