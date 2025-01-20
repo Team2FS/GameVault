@@ -1,10 +1,10 @@
-plugins { //plugins
+plugins {
     id("com.android.application")
 }
 
 android {
     namespace = "com.example.gamevault"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.gamevault"
@@ -40,6 +40,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     implementation("androidx.navigation:navigation-fragment:2.8.5")
     implementation("androidx.navigation:navigation-ui:2.8.5")
+    implementation("androidx.annotation:annotation:1.6.0")
+    implementation("androidx.activity:activity:1.9.3")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.activity:activity:1.10.0")
     testImplementation("junit:junit:4.13.2")
