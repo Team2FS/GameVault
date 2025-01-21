@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
 import com.example.gamevault.ui.settings.credits.Credits;
+import com.example.gamevault.ui.settings.suggestfeature.SuggestFeatureActivity;
 
 public class SettingsFragment extends Fragment {
 
@@ -53,6 +54,8 @@ public class SettingsFragment extends Fragment {
         // Handle Suggest Feature button
         binding.SuggestFeature.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Suggest Feature Clicked");
+            Intent intent = new Intent(getActivity(), SuggestFeatureActivity.class);
+            startActivity(intent);
         });
         // Handle Donate button
         binding.Donate.setOnClickListener(v -> {
