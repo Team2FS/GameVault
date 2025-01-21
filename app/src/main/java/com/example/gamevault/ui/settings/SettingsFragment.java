@@ -60,7 +60,7 @@ public class SettingsFragment extends Fragment {
         });
         // Handle Credits button
         binding.Credits.setOnClickListener(v -> {
-            Log.d("SettingsFragment", "Credit Clicke");
+            Log.d("SettingsFragment", "Credit Clicked");
             Intent intent = new Intent(requireContext(), Credits.class);
             startActivity(intent);
         });
