@@ -93,7 +93,7 @@ public class loginActivity extends AppCompatActivity {
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(loginActivity.this, "Sign-up successful! Please log in.", Toast.LENGTH_SHORT).show();
 
-                                    // Switch back to login mode
+                                    // Switch back to log-in mode
                                     isSignUpMode = false;
                                     loginButton.setText("Login");
                                     signUpButton.setText("Sign Up");
@@ -156,15 +156,18 @@ public class loginActivity extends AppCompatActivity {
             }
         });
 
-        signUpButton.setOnClickListener(v -> {
-            // Toggle between login and sign-up modes
-            isSignUpMode = !isSignUpMode;
-            if (isSignUpMode) {
-                loginButton.setText("Sign Up");
-                signUpButton.setText("Back to Login");
-            } else {
-                loginButton.setText("Login");
-                signUpButton.setText("Sign Up");
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Toggle between login and sign-up modes
+                isSignUpMode = !isSignUpMode;
+                if (isSignUpMode) {
+                    loginButton.setText("Sign Up");
+                    signUpButton.setText("Back to Login");
+                } else {
+                    loginButton.setText("Login");
+                    signUpButton.setText("Sign Up");
+                }
             }
         });
 
