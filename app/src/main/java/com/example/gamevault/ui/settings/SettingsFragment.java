@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
+import com.example.gamevault.ui.settings.manageprofile.MainProfileActivity;
 
 public class SettingsFragment extends Fragment {
 
@@ -40,6 +41,9 @@ public class SettingsFragment extends Fragment {
         // Handle manage profile button
         binding.ManageProfile.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Profile Clicked");
+            Intent intent = new Intent(getActivity(), MainProfileActivity.class);
+            startActivity(intent);
+
         });
         // Handle manage linked accounts button
         binding.ManageLinkedAccounts.setOnClickListener(v -> {
