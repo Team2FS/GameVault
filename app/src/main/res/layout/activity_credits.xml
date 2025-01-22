@@ -9,9 +9,65 @@
         tools:context=".ui.settings.credits.Credits">
 
     <TextView
-            android:text="You are in credits"
+            android:text="Connor Wallace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.598"
+            android:textSize="20sp"  android:textColor="@color/white"/>/>
+    <TextView
+            android:text="Made with love by:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintVertical_bias="0.352"
+            android:textSize="20sp" android:textColor="@color/white"/>
+    <TextView
+            android:text="Andy Kilgore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.221" app:layout_constraintVertical_bias="0.433"
+            android:textSize="20sp"  android:textColor="@color/white"/>
+    <TextView
+            android:text="Austin Gills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView4"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.222" app:layout_constraintVertical_bias="0.515"
+            android:textSize="20sp"  android:textColor="@color/white"/>
+    <TextView
+            android:text="Jake Leistra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.801" app:layout_constraintVertical_bias="0.433"
+            android:textSize="20sp"  android:textColor="@color/white"/>
+    <TextView
+            android:text="TJ Parson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.807" app:layout_constraintVertical_bias="0.515"
+            android:textSize="20sp"  android:textColor="@color/white"/>
+    <TextView
+            android:text="Registered names, assets, and trademarks are the copyright and property of their respective owners."
+            android:layout_width="409dp"
+            android:layout_height="133dp" android:id="@+id/textView7"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.856"
+            android:textSize="20sp" android:textAlignment="center"  android:textColor="@color/white"/>
+    <ImageView
+            android:layout_width="279dp"
+            android:layout_height="201dp" app:srcCompat="@drawable/gamevault_logo" android:id="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.03"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
