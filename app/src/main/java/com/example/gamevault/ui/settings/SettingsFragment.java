@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SettingsFragment extends Fragment {
 
@@ -68,10 +69,17 @@ public class SettingsFragment extends Fragment {
         // Handle Log out button
         binding.LogOut.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Log Out Clicked");
+
+            // Sign out from Firebase
+            FirebaseAuth.getInstance().signOut();
+
+            // Clear the shared Preferences
             SharedPreferences sharedpreferences = requireContext().getSharedPreferences("Profile", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedpreferences.edit();
             editor.putBoolean("isLoggedIn", false);
             editor.apply();
+
+            // Navigate to the login Activity
             Intent intent = new Intent(requireContext(), loginActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
