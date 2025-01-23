@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "531308322485",
+    "project_id": "gamevault-cd946",
+    "storage_bucket": "gamevault-cd946.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531308322485:android:837d54d4a47d26dc3328fc",
+        "android_client_info": {
+          "package_name": "com.example.gamevault"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNsuwBvUDsJkwkidyGdGrqzlXA_8p4HA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

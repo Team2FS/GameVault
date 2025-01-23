@@ -16,6 +16,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.example.gamevault.ui.settings.credits.Credits;
+import com.example.gamevault.ui.settings.suggestfeature.SuggestFeatureActivity;
 
 public class SettingsFragment extends Fragment {
 
@@ -52,6 +55,8 @@ public class SettingsFragment extends Fragment {
         // Handle Suggest Feature button
         binding.SuggestFeature.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Suggest Feature Clicked");
+            Intent intent = new Intent(getActivity(), SuggestFeatureActivity.class);
+            startActivity(intent);
         });
         // Handle Donate button
         binding.Donate.setOnClickListener(v -> {
@@ -60,18 +65,40 @@ public class SettingsFragment extends Fragment {
         // Handle Credits button
         binding.Credits.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Credit Clicked");
+            Intent intent = new Intent(requireContext(), Credits.class);
+            startActivity(intent);
         });
         // Handle Delete button
         binding.DeleteAccount.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Delete Clicked");
-        });
-        // Handle Log out button
-        binding.LogOut.setOnClickListener(v -> {
-            Log.d("SettingsFragment", "Log Out Clicked");
+            //Use Fire base to delete the user data then call the same logic to set shared preferences and show the log out view.
+            /*
+            *********************************************************************
+            * Logic for Fire base deleting account
+            *********************************************************************
+             */
             SharedPreferences sharedpreferences = requireContext().getSharedPreferences("Profile", Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedpreferences.edit();
             editor.putBoolean("isLoggedIn", false);
             editor.apply();
+            Intent intent = new Intent(requireContext(), loginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        });
+        // Handle Log out button
+        binding.LogOut.setOnClickListener(v -> {
+            Log.d("SettingsFragment", "Log Out Clicked");
+
+            // Sign out from Firebase
+            FirebaseAuth.getInstance().signOut();
+
+            // Clear the shared Preferences
+            SharedPreferences sharedpreferences = requireContext().getSharedPreferences("Profile", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedpreferences.edit();
+            editor.putBoolean("isLoggedIn", false);
+            editor.apply();
+
+            // Navigate to the login Activity
             Intent intent = new Intent(requireContext(), loginActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
