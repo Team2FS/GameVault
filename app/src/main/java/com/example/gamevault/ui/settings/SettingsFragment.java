@@ -43,9 +43,6 @@ public class SettingsFragment extends Fragment {
         // Handle manage profile button
         binding.ManageProfile.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Profile Clicked");
-            Intent intent = new Intent(getActivity(), loginActivity.class);
-            startActivity(intent);
-
         });
         // Handle manage linked accounts button
         binding.ManageLinkedAccounts.setOnClickListener(v -> {
