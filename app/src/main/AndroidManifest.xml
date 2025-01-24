@@ -19,7 +19,7 @@
                 android:name=".ui.settings.suggestfeature.SuggestFeatureActivity"
                 android:exported="false"/>
         <activity
-                android:name=".ui.settings.manageprofile.MainProfileActivity"
+                android:name=".ui.settings.manageprofile.ManageProfileActivity"
                 android:exported="false"/>
         <activity
                 android:name=".ui.login.loginActivity"
