@@ -16,11 +16,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
-import com.example.gamevault.ui.settings.manageprofile.ManageProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.example.gamevault.ui.settings.credits.Credits;
 import com.example.gamevault.ui.settings.suggestfeature.SuggestFeatureActivity;
-
 
 public class SettingsFragment extends Fragment {
 
@@ -45,9 +43,6 @@ public class SettingsFragment extends Fragment {
         // Handle manage profile button
         binding.ManageProfile.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Profile Clicked");
-            Intent intent = new Intent(getActivity(), ManageProfileActivity.class);
-            startActivity(intent);
-
         });
         // Handle manage linked accounts button
         binding.ManageLinkedAccounts.setOnClickListener(v -> {
@@ -76,7 +71,7 @@ public class SettingsFragment extends Fragment {
         // Handle Delete button
         binding.DeleteAccount.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Delete Clicked");
-            //Use Fire base to delete the user data then call the same logic to set shared preferences and show the log-out view.
+            //Use Fire base to delete the user data then call the same logic to set shared preferences and show the log out view.
             /*
             *********************************************************************
             * Logic for Fire base deleting account
