@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.settings.suggestfeature.SuggestFeatureActivity">
+
+    <RadioButton
+            android:text="Feature Request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/FeatureButton"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.227" app:layout_constraintVertical_bias="0.282"/>
+    <RadioButton
+            android:text="Bug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/BugButton"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.728" app:layout_constraintVertical_bias="0.282"/>
+    <TextView
+            android:text="We Appreciate Your Support!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView8"
+            android:textSize="20sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintVertical_bias="0.147"/>
+    <TextView
+            android:text="Are you submitting a feature request or a bug? "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView9"
+            android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintVertical_bias="0.208" android:textAlignment="center"/>
+    <EditText
+            android:layout_width="344dp"
+            android:layout_height="295dp"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/ResponseField"
+            android:hint="Type your bug report or feature suggestion here."
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.492" app:layout_constraintVertical_bias="0.594"
+            android:textAlignment="center"/>
+    <Button
+            android:text="Submit Report"
+            android:layout_width="188dp"
+            android:layout_height="50dp" android:id="@+id/SubmitButton"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintVertical_bias="0.857"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
