@@ -3,6 +3,7 @@ package com.example.gamevault;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import com.example.gamevault.ui.login.loginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.example.gamevault.databinding.ActivityMainBinding;
+import com.example.gamevault.FirebaseUtility;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,6 +46,15 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        // Read JSON from assets and upload to Firebase
+        String jsonData = FirebaseUtility.readJSONFromAsset(this, "CamoData.json");
+        if (jsonData != null) {
+            FirebaseUtility.uploadJSONToFirebase(jsonData);
+        } else {
+            Log.e("MainActivity", "Failed to read JSON data");
+        }
+
     }
 
 }
