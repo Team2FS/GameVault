@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
-import com.example.gamevault.ui.settings.manageprofile.MainProfileActivity;
+import com.example.gamevault.ui.settings.manageprofile.ManageProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.example.gamevault.ui.settings.credits.Credits;
 import com.example.gamevault.ui.settings.suggestfeature.SuggestFeatureActivity;
@@ -44,7 +44,7 @@ public class SettingsFragment extends Fragment {
         // Handle manage profile button
         binding.ManageProfile.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Profile Clicked");
-            Intent intent = new Intent(getActivity(), MainProfileActivity.class);
+            Intent intent = new Intent(getActivity(), ManageProfileActivity.class);
             startActivity(intent);
 
         });
