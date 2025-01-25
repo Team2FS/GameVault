@@ -1,90 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.settings.SettingsFragment" android:id="@+id/frameLayout">
-    <Button
-            android:text="Toggle Theme"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/ToggleTheme"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.0" app:layout_constraintHorizontal_bias="0.5"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
-    <Button
-            android:text="Manage Profile"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/ManageProfile"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.1"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
-    <Button
-            android:text="Manage Linked Accounts"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/ManageLinkedAccounts"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.2"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
-    <Button
-            android:text="Manage Camo Progress"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/ManageCamoProgress"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.3"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
-    <Button
-            android:text="Suggest Feature / Report Bug"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/SuggestFeature"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.4"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
-    <Button
-            android:text="Buy Us A Coffee :)"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/Donate"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintVertical_bias="0.5"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
-    <Button
-            android:text="Credits"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/Credits"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.6"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
-    <Button
-            android:text="Delete Account"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/DeleteAccount"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.7"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
-    <Button
-            android:text="Log Out"
-            android:layout_width="293dp"
-            android:layout_height="52dp" android:id="@+id/LogOut"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.8"
-            android:backgroundTint="#BDBDBD" android:textColor="@color/black"/>
+        tools:context=".ui.settings.SettingsFragment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout">
+
+        <Button
+                android:id="@+id/ToggleTheme"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Toggle Theme"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/ManageProfile"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Manage Profile"
+                app:layout_constraintTop_toBottomOf="@+id/ToggleTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/ManageLinkedAccounts"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Manage Linked Accounts"
+                app:layout_constraintTop_toBottomOf="@+id/ManageProfile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/ManageCamoProgress"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Manage Camo Progress"
+                app:layout_constraintTop_toBottomOf="@+id/ManageLinkedAccounts"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/SuggestFeature"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Suggest Feature / Report Bug"
+                app:layout_constraintTop_toBottomOf="@+id/ManageCamoProgress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/Donate"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Buy Us A Coffee :)"
+                app:layout_constraintTop_toBottomOf="@+id/SuggestFeature"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/Credits"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Credits"
+                app:layout_constraintTop_toBottomOf="@+id/Donate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/DeleteAccount"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Delete Account"
+                app:layout_constraintTop_toBottomOf="@+id/Credits"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/LogOut"
+                android:layout_width="400dp"
+                android:layout_height="52dp"
+                android:text="Log Out"
+                app:layout_constraintTop_toBottomOf="@+id/DeleteAccount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#BDBDBD"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
