@@ -15,10 +15,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import com.example.gamevault.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
-
-    public class ManageProfileActivity extends AppCompatActivity {
+public class ManageProfileActivity extends AppCompatActivity {
         private static final int PICK_IMAGE_REQUEST = 1;
         private ImageView profileImage;
         private Button btnChangePicture;
@@ -69,10 +70,15 @@ import com.example.gamevault.R;
         }
 
         private void saveProfile() {
+
             // Here you can implement the logic to save the profile information
             // For example, you can save the imageUri to Firebase Storage and user data to Firestore
 
             if (imageUri != null) {
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                if(user != null) {
+
+                }
                 // Upload the image to Firebase Storage and save user data
                 // Example: uploadImageToFirebase(imageUri);
                 Toast.makeText(this, "Profile saved!", Toast.LENGTH_SHORT).show();
