@@ -1,0 +1,3733 @@
+{
+    "modes": {
+        "mp": [
+            {
+                "Assault Rifles": [
+                    {
+                        "Name": "XM4",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 1
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 2
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 3
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 4
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 5
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 6
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 7
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 8
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 9
+                            },
+                            "Muddled": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 10
+                            },
+                            "Machina": {
+                                "description": "Get a kill without taking damage 30 times",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 11
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 12
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 13
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 14
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 15
+                            }
+                        }
+                    },
+                    {
+                        "Name": "AK-74",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 16
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 17
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 18
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 19
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 20
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 21
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 22
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 23
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 24
+                            },
+                            "Whitecap": {
+                                "description": "Get 50 eliminations while the strategist combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 25
+                            },
+                            "Vengeance": {
+                                "description": "Get 20 kills with the underbarrel launcher",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 26
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 27
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 28
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 29
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 30
+                            }
+                        }
+                    },
+                    {
+                        "Name": "AMES 85",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 31
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 32
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 33
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 34
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 35
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 36
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 37
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 38
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 39
+                            },
+                            "Heatstroke": {
+                                "description": "Get a kill without taking damage 30 times",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 40
+                            },
+                            "Burial": {
+                                "description": "Get 2 kills without reloading 10 times",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 41
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 42
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 43
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 44
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 45
+                            }
+                        }
+                    },
+                    {
+                        "Name": "GPR 91",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 46
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 47
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 48
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 49
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 50
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 51
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 52
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 53
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 54
+                            },
+                            "Ambush": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 55
+                            },
+                            "Cacti Cathode": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 56
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 57
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 58
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 59
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 60
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Model L",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 61
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 62
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 63
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 64
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 65
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 66
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 67
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 68
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 69
+                            },
+                            "Cherry Blossom": {
+                                "description": "Get 50 eliminations while the enforcer combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 70
+                            },
+                            "Cedar": {
+                                "description": "Get 50 eliminations with a supressor",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 71
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 72
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 73
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 74
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 75
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Goblin Mk2",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 76
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 77
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 78
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 79
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 80
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 81
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 82
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 83
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 84
+                            },
+                            "Astral Cry": {
+                                "description": "Get a kill without taking damage 30 times",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 85
+                            },
+                            "Hammerhead": {
+                                "description": "Get 20 kills with the underbarrel launcher",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 86
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 87
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 88
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 89
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 90
+                            }
+                        }
+                    },
+                    {
+                        "Name": "AS VAL",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 91
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 92
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 93
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 94
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 95
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 96
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 97
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 98
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 99
+                            },
+                            "Crimson Stepes": {
+                                "description": "Get 50 eliminations while the recon combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 100
+                            },
+                            "Elk": {
+                                "description": "Get 30 hipfire kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 101
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 102
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 103
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 104
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 105
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Krig C",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 106
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 107
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 108
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 109
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 110
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 111
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 112
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 113
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 114
+                            },
+                            "Monochrome": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 115
+                            },
+                            "Dreadshade": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 116
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 117
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 118
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 119
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 120
+                            }
+                        }
+                    }
+                ],
+                "SMGs": [
+                    {
+                        "Name": "C9",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 121
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 122
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 123
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 124
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 125
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 126
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 127
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 128
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 129
+                            },
+                            "Heatwave": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 130
+                            },
+                            "Panther": {
+                                "description": "Get 50 eliminations with a suppressor",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 131
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 132
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 133
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 134
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 135
+                            }
+                        }
+                    },
+                    {
+                        "Name": "KSV",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 136
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 137
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 138
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 139
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 140
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 141
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 142
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 143
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 144
+                            },
+                            "Kakapo": {
+                                "description": "Get 2 kills without reloading 10 times",
+                                "counter": 2,
+                                "icon": "",
+                                "id": 145
+                            },
+                            "Throwback": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 146
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 147
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 148
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 149
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 150
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Tanto .22",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 151
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 152
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 153
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 154
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 155
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 156
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 157
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 158
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 159
+                            },
+                            "Amorphous": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 160
+                            },
+                            "Go Bananas": {
+                                "description": "Get a kill without taking any damage 30 times",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 161
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 162
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 163
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 164
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 165
+                            }
+                        }
+                    },
+                    {
+                        "Name": "PP-919",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 166
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 167
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 168
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 169
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 170
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 171
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 172
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 173
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 174
+                            },
+                            "Radiant Bath": {
+                                "description": "Get 30 hipfire kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 175
+                            },
+                            "Midnight Prowl": {
+                                "description": "Get 50 eliminations while the strategist combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 176
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 177
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 178
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 179
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 180
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Jackal PDW",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 181
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 182
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 183
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 184
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 185
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 186
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 187
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 188
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 189
+                            },
+                            "Deep End": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 190
+                            },
+                            "Dread": {
+                                "description": "Get 30 point blank kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 191
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 192
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 193
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 194
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 195
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Kompakt 92",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 196
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 197
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 198
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 199
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 200
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 201
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 202
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 203
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 204
+                            },
+                            "Kingfisher": {
+                                "description": "Get 30 hipfire kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 205
+                            },
+                            "Blackthorn": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 206
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 207
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 208
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 209
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 210
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Saug",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 211
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 212
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 213
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 214
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 215
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 216
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 217
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 218
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 219
+                            },
+                            "Netherworld": {
+                                "description": "Get 30 point blank kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 220
+                            },
+                            "Solar Tide": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 221
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 222
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 223
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 224
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 225
+                            }
+                        }
+                    }
+                ],
+                "Shotguns": [
+                    {
+                        "Name": "Marine SP",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 226
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 227
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 228
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 229
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 230
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 231
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 232
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 233
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 234
+                            },
+                            "Blueberry Lime": {
+                                "description": "Get 30 hipfire kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 235
+                            },
+                            "Chromed Out": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 236
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 237
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 238
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 239
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 240
+                            }
+                        }
+                    },
+                    {
+                        "Name": "ASG-89",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 241
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 242
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 243
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 244
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 245
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 246
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 247
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 248
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 249
+                            },
+                            "Night Terror": {
+                                "description": "Get 30 point blank kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 250
+                            },
+                            "Drive-In": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 251
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 252
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 253
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 254
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 255
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Maelstrom",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 256
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 257
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 258
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 259
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 260
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 261
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 262
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 263
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 264
+                            },
+                            "Voidpulse": {
+                                "description": "Get 30 point blank kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 265
+                            },
+                            "Moonlit Grace": {
+                                "description": "Get 50 eliminations while the enforcer combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 266
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 267
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 268
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 269
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 270
+                            }
+                        }
+                    }
+                ],
+                "LMGs": [
+                    {
+                        "Name": "PU-21",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 271
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 272
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 273
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 274
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 275
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 276
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 277
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 278
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 279
+                            },
+                            "Neon Bath": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 280
+                            },
+                            "Vigilance": {
+                                "description": "Get 2 kills without reloading 10 times",
+                                "counter": 2,
+                                "icon": "",
+                                "id": 281
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 282
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 283
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 284
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 285
+                            }
+                        }
+                    },
+                    {
+                        "Name": "XMG",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 286
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 287
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 288
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 289
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 290
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 291
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 292
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 293
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 294
+                            },
+                            "Buzz": {
+                                "description": "Get 2 kills without releasing the trigger 5 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 295
+                            },
+                            "Snakebite": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 296
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 297
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 298
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 299
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 300
+                            }
+                        }
+                    },
+                    {
+                        "Name": "GPMG-7",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 301
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 302
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 303
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 304
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 305
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 306
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 307
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 308
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 309
+                            },
+                            "Brush Stroke": {
+                                "description": "Get 50 eliminations while the strategist combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 310
+                            },
+                            "Idyllic": {
+                                "description": "Get 30 point blank kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 311
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 312
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 313
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 314
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 315
+                            }
+                        }
+                    }
+                ],
+                "Marksman Rifles": [
+                    {
+                        "Name": "SWAT 5.56",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 316
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 317
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 318
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 319
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 320
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 321
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 322
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 323
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 324
+                            },
+                            "Ectoplasm": {
+                                "description": "Get 50 eliminations with a 4.0x or higher magnification scope",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 325
+                            },
+                            "Lumberjack": {
+                                "description": "Get 30 eliminations while the enforcer combat speciality is active",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 326
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 327
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 328
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 329
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 330
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Tsarkov 7.62",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 331
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 332
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 333
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 334
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 335
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 336
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 337
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 338
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 339
+                            },
+                            "Clear Water": {
+                                "description": "Get 15 longshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 340
+                            },
+                            "Concrete Jungle": {
+                                "description": "Get 50 eliminations while the strategist combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 341
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 342
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 343
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 344
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 345
+                            }
+                        }
+                    },
+                    {
+                        "Name": "AEK-973",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 346
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 347
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 348
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 349
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 350
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 351
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 352
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 353
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 354
+                            },
+                            "Ablaze": {
+                                "description": "Get 2 kills without reloading 10 times",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 355
+                            },
+                            "Mirage": {
+                                "description": "Get 50 eliminations with a 4.0x or higher magnification scope",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 356
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 357
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 358
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 359
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 360
+                            }
+                        }
+                    },
+                    {
+                        "Name": "DM-10",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 361
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 362
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 363
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 364
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 365
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 366
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 367
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 368
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 369
+                            },
+                            "Mellowbloom": {
+                                "description": "Get 50 eliminations with a suppressor",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 370
+                            },
+                            "Cobalt": {
+                                "description": "Get 15 longshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 371
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 372
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 373
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 374
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 375
+                            }
+                        }
+                    }
+                ],
+                "Sniper Rifles": [
+                    {
+                        "Name": "LW3A1 Frostline",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 376
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 377
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 378
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 379
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 380
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 381
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 382
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 383
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 384
+                            },
+                            "Copper": {
+                                "description": "Get 50 eliminations while the recon combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 385
+                            },
+                            "Permafrost": {
+                                "description": "Get 2 kills without reloading 10 times",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 386
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 387
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 388
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 389
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 390
+                            }
+                        }
+                    },
+                    {
+                        "Name": "SVD",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 391
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 392
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 393
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 394
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 395
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 396
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 397
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 398
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 399
+                            },
+                            "Pixelized": {
+                                "description": "Get 50 eliminations while the recon combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 400
+                            },
+                            "Patchwork": {
+                                "description": "Get 50 eliminations with a 4.0x or higher magnification scope",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 401
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 402
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 403
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 404
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 405
+                            }
+                        }
+                    },
+                    {
+                        "Name": "LR 7.62",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 406
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 407
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 408
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 409
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 410
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 411
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 412
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 413
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 414
+                            },
+                            "Chaparral": {
+                                "description": "Get 30 one-shot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 415
+                            },
+                            "Nimbus": {
+                                "description": "Get 15 longshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 416
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 417
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 418
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 419
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 420
+                            }
+                        }
+                    },
+                    {
+                        "Name": "AMR Mod 4",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 421
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 422
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 423
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 424
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 425
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 426
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 427
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 428
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 429
+                            },
+                            "Shadowthorn": {
+                                "description": "Get 30 one-shot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 430
+                            },
+                            "Tidal Harmony": {
+                                "description": "Get 2 kills without reloading 10 times",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 431
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 432
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 433
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 434
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 435
+                            }
+                        }
+                    }
+                ],
+                "Pistols": [
+                    {
+                        "Name": "9mm PM",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 436
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 437
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 438
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 439
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 440
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 441
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 442
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 443
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 444
+                            },
+                            "Exabyte": {
+                                "description": "Get 15 kills shortly after switching weapons",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 445
+                            },
+                            "Blue Ring": {
+                                "description": "Get 50 eliminations with a suppressor",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 446
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 447
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 448
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 449
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 450
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Grekhova",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 451
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 452
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 453
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 454
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 455
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 456
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 457
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 458
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 459
+                            },
+                            "Spin": {
+                                "description": "Get 30 hipfire kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 460
+                            },
+                            "Demeter": {
+                                "description": "Get 50 eliminations while the enforcer combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 461
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 462
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 463
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 464
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 465
+                            }
+                        }
+                    },
+                    {
+                        "Name": "GS45",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 466
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 467
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 468
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 469
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 470
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 471
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 472
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 473
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 474
+                            },
+                            "Thistlevine": {
+                                "description": "Get 30 point blank kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 475
+                            },
+                            "Ragamuffin": {
+                                "description": "Get 15 kills shortly after switching weapons",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 476
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 477
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 478
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 479
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 480
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Stryer .22",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 481
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 482
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 483
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 484
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 485
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 486
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 487
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 488
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 489
+                            },
+                            "Ritual": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 490
+                            },
+                            "Transcend": {
+                                "description": "Get 50 eliminations while the recon combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 491
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 492
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 493
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 494
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 495
+                            }
+                        }
+                    }
+                ],
+                "Launchers/Specials": [
+                    {
+                        "Name": "CIGNMA 2B",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 2 kills or scorestreak destructions",
+                                "counter": 2,
+                                "icon": "",
+                                "id": 496
+                            },
+                            "Woodland": {
+                                "description": "Get 5 kills or scorestreak destructions",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 497
+                            },
+                            "Savanna": {
+                                "description": "Get 10 kills or scorestreak destructions",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 498
+                            },
+                            "Splinter": {
+                                "description": "Get 15 kills or scorestreak destructions",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 499
+                            },
+                            "Moss": {
+                                "description": "Get 20 kills or scorestreak destructions",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 500
+                            },
+                            "Saboteur": {
+                                "description": "Get 25 kills or scorestreak destructions",
+                                "counter": 25,
+                                "icon": "",
+                                "id": 501
+                            },
+                            "Digital": {
+                                "description": "Get 30 kills or scorestreak destructions",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 502
+                            },
+                            "Tide": {
+                                "description": "Get 40 kills or scorestreak destructions",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 503
+                            },
+                            "Red Tiger": {
+                                "description": "Get 50 kills or scorestreak destructions",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 504
+                            },
+                            "Policia": {
+                                "description": "Get 10 direct hit kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 505
+                            },
+                            "Abstract": {
+                                "description": "Destroy 10 aerial scorestreaks",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 506
+                            },
+                            "Gold": {
+                                "description": "Get 3 destructions (scorestreaks or vehicles) in a single match 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 507
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills in a single match 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 508
+                            },
+                            "Dark Spine": {
+                                "description": "Get 5 destructions (scorestreaks or vehicles) in a single match 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 509
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills in a single match 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 510
+                            }
+                        }
+                    },
+                    {
+                        "Name": "HE-1",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 2 kills or scorestreak destructions",
+                                "counter": 2,
+                                "icon": "",
+                                "id": 511
+                            },
+                            "Woodland": {
+                                "description": "Get 5 kills or scorestreak destructions",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 512
+                            },
+                            "Savanna": {
+                                "description": "Get 10 kills or scorestreak destructions",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 513
+                            },
+                            "Splinter": {
+                                "description": "Get 15 kills or scorestreak destructions",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 514
+                            },
+                            "Moss": {
+                                "description": "Get 20 kills or scorestreak destructions",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 515
+                            },
+                            "Saboteur": {
+                                "description": "Get 25 kills or scorestreak destructions",
+                                "counter": 25,
+                                "icon": "",
+                                "id": 516
+                            },
+                            "Digital": {
+                                "description": "Get 30 kills or scorestreak destructions",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 517
+                            },
+                            "Tide": {
+                                "description": "Get 40 kills or scorestreak destructions",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 518
+                            },
+                            "Red Tiger": {
+                                "description": "Get 50 kills or scorestreak destructions",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 519
+                            },
+                            "Reboot": {
+                                "description": "Get 10 direct hit kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 520
+                            },
+                            "Dreamer": {
+                                "description": "Destroy 10 scorestreaks or enemy equipment",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 521
+                            },
+                            "Gold": {
+                                "description": "Get 3 destructions (scorestreaks or vehicles) in a single match 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 522
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills in a single match 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 523
+                            },
+                            "Dark Spine": {
+                                "description": "Get 5 destructions (scorestreaks or vehicles) in a single match 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 524
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills in a single match 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 525
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Sirin 9mm",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 Headshot kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 526
+                            },
+                            "Woodland": {
+                                "description": "Get 10 Headshot kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 527
+                            },
+                            "Savanna": {
+                                "description": "Get 15 Headshot kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 528
+                            },
+                            "Splinter": {
+                                "description": "Get 20 Headshot kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 529
+                            },
+                            "Moss": {
+                                "description": "Get 30 Headshot kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 530
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 Headshot kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 531
+                            },
+                            "Digital": {
+                                "description": "Get 50 Headshot kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 532
+                            },
+                            "Tide": {
+                                "description": "Get 75 Headshot kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 533
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 Headshot kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 534
+                            },
+                            "Nebulon": {
+                                "description": "Get 30 kills shortly after sprinting",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 535
+                            },
+                            "Enchanted": {
+                                "description": "Get 50 kills while moving",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 536
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 537
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 538
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 539
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 540
+                            }
+                        }
+                    }
+                ],
+                "Melee Weapons": [
+                    {
+                        "Name": "Knife",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 541
+                            },
+                            "Woodland": {
+                                "description": "Get 10 kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 542
+                            },
+                            "Savanna": {
+                                "description": "Get 15 kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 543
+                            },
+                            "Splinter": {
+                                "description": "Get 20 kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 544
+                            },
+                            "Moss": {
+                                "description": "Get 30 kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 545
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 546
+                            },
+                            "Digital": {
+                                "description": "Get 50 kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 547
+                            },
+                            "Tide": {
+                                "description": "Get 75 kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 548
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 549
+                            },
+                            "Dying Envy": {
+                                "description": "Get 50 eliminations while the enforcer combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 550
+                            },
+                            "Tropical Leopard": {
+                                "description": "Get a kill without taking any damage 30 times",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 551
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 552
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 553
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 554
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 555
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Baseball Bat",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 556
+                            },
+                            "Woodland": {
+                                "description": "Get 10 kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 557
+                            },
+                            "Savanna": {
+                                "description": "Get 15 kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 558
+                            },
+                            "Splinter": {
+                                "description": "Get 20 kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 559
+                            },
+                            "Moss": {
+                                "description": "Get 30 kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 560
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 561
+                            },
+                            "Digital": {
+                                "description": "Get 50 kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 562
+                            },
+                            "Tide": {
+                                "description": "Get 75 kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 563
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 564
+                            },
+                            "Torment": {
+                                "description": "Get 15 kills shortly after switching weapons",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 565
+                            },
+                            "Slip": {
+                                "description": "Get a kill without taking any damage 30 times",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 566
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 567
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 568
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 569
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 570
+                            }
+                        }
+                    },
+                    {
+                        "Name": "Power Drill",
+                        "Skins": {
+                            "Granite": {
+                                "description": "Get 5 kills",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 571
+                            },
+                            "Woodland": {
+                                "description": "Get 10 kills",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 572
+                            },
+                            "Savanna": {
+                                "description": "Get 15 kills",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 573
+                            },
+                            "Splinter": {
+                                "description": "Get 20 kills",
+                                "counter": 20,
+                                "icon": "",
+                                "id": 574
+                            },
+                            "Moss": {
+                                "description": "Get 30 kills",
+                                "counter": 30,
+                                "icon": "",
+                                "id": 575
+                            },
+                            "Saboteur": {
+                                "description": "Get 40 kills",
+                                "counter": 40,
+                                "icon": "",
+                                "id": 576
+                            },
+                            "Digital": {
+                                "description": "Get 50 kills",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 577
+                            },
+                            "Tide": {
+                                "description": "Get 75 kills",
+                                "counter": 75,
+                                "icon": "",
+                                "id": 578
+                            },
+                            "Red Tiger": {
+                                "description": "Get 100 kills",
+                                "counter": 100,
+                                "icon": "",
+                                "id": 579
+                            },
+                            "Twilight Toadstool": {
+                                "description": "Get 50 eliminations while the recon combat speciality is active",
+                                "counter": 50,
+                                "icon": "",
+                                "id": 580
+                            },
+                            "Thermal": {
+                                "description": "Get 15 kills shortly after sprinting",
+                                "counter": 15,
+                                "icon": "",
+                                "id": 581
+                            },
+                            "Gold": {
+                                "description": "Get 10 double kills or better",
+                                "counter": 10,
+                                "icon": "",
+                                "id": 582
+                            },
+                            "Diamond": {
+                                "description": "Get 3 kills without dying 10 times",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 583
+                            },
+                            "Dark Spine": {
+                                "description": "Get 3 triple kills or better",
+                                "counter": 3,
+                                "icon": "",
+                                "id": 584
+                            },
+                            "Dark Matter": {
+                                "description": "Get 5 kills without dying 3 times",
+                                "counter": 5,
+                                "icon": "",
+                                "id": 585
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "531308322485",
+    "firebase_url": "https://gamevault-cd946-default-rtdb.firebaseio.com/",
     "project_id": "gamevault-cd946",
     "storage_bucket": "gamevault-cd946.firebasestorage.app"
   },
