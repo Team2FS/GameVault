@@ -12,61 +12,80 @@
     <!-- profile picture -->
 
 
-    <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Manage Profile"
-            android:textSize="24sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"/>
-
     <!-- Replace with your profile image placeholder -->
 
 
     <!-- Replace with your pencil icon -->
 
+    <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage Profile"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
     <ImageView
             android:id="@+id/profileImageView"
             android:layout_height="80dp"
             android:layout_width="80dp"
-
             android:contentDescription="Profile Picture"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@android:drawable/stat_sys_upload"
+            app:layout_constraintTop_toBottomOf="@id/titleTextView"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop" app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@android:drawable/ic_menu_edit" android:layout_marginStart="12dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
     <Button
             android:id="@+id/btnChangePicture"
-            android:layout_width="52dp"
-            android:layout_height="48dp"
-            android:background="@android:color/transparent"
-            app:layout_constraintBaseline_toTopOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="26dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="15dp" tools:ignore="SpeakableTextPresentCheck"/>
-    <EditText
-            android:id="@+id/nameEditText"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="Edit Pic"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toBottomOf="@id/profileImageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:padding="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="96dp"
-            android:minHeight="48dp"/>
-
-    <EditText
-            android:id="@+id/usernameEditText"
-            android:layout_width="0dp"
+            android:layout_marginTop="8dp" />
+    <CheckBox
+            android:id="@+id/checkBoxTwoFactorAuth"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Username"
-            app:layout_constraintTop_toBottomOf="@id/nameEditText"
+            android:text="Enable Two-Factor Authentication"
+            app:layout_constraintTop_toBottomOf="@id/passwordEditText"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
-            android:padding="8dp" android:minHeight="48dp"/>
+
+    />
+    <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Change Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@id/emailEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            />
+    <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@id/bioEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"/>
+
 
     <EditText
             android:id="@+id/emailEditText"
@@ -74,24 +93,12 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            app:layout_constraintTop_toBottomOf="@id/usernameEditText"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
-            android:padding="8dp" android:minHeight="48dp"/>
-
-    <EditText
-            android:id="@+id/passwordEditText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Change Password"
-            android:inputType="textPassword"
-            app:layout_constraintTop_toBottomOf="@id/emailEditText"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"
-            android:padding="8dp" android:minHeight="48dp"/>
-
+            android:padding="8dp"/>
     <EditText
             android:id="@+id/bioEditText"
             android:layout_width="0dp"
@@ -99,25 +106,19 @@
             android:hint="Bio"
             android:inputType="textMultiLine"
             android:lines="4"
-            app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/btnChangePicture"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"
-            android:padding="8dp"/>
-
+            android:layout_marginTop="16dp"/>
     <Button
             android:id="@+id/btnSaveProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Save"
-            app:layout_constraintTop_toBottomOf="@id/bioEditText"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxTwoFactorAuth"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"/>
-    <ImageView
-            android:layout_width="51dp"
-            android:layout_height="49dp" app:srcCompat="@android:drawable/ic_menu_upload"
-            android:id="@+id/imageView4" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="26dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp"/>
+            android:layout_marginTop="32dp"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
