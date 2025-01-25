@@ -6,7 +6,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.settings.manageprofile.MainProfileActivity">
+        tools:context=".ui.settings.manageprofile.ManageProfileActivity">
 
     <EditText
             android:layout_width="wrap_content"
