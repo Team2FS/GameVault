@@ -9,36 +9,56 @@
         android:background="@color/black"
         tools:context=".ui.login.loginActivity">
     <ImageView
-            android:layout_width="436dp"
-            android:layout_height="732dp" app:srcCompat="@android:drawable/screen_background_dark"
             android:id="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.52" app:layout_constraintVertical_bias="0.0"/>
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@android:drawable/screen_background_dark"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5"/>
+
+
     <Button
             android:text="sign up"
             android:layout_width="154dp"
-            android:layout_height="49dp" android:id="@+id/signUpButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2" app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintVertical_bias="0.87"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpButton"
+            app:layout_constraintTop_toBottomOf="@id/passwordTextField"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintVertical_bias="0.864"/>
     <Button
+            android:id="@+id/loginButton"
             android:text="login"
             android:layout_width="154dp"
-            android:layout_height="49dp" android:id="@+id/loginButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2" app:layout_constraintHorizontal_bias="0.496"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/passwordTextField"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.536"
             app:layout_constraintVertical_bias="0.747"/>
     <ImageView
-            android:layout_width="209dp"
-            android:layout_height="196dp" app:srcCompat="@drawable/gamevault_logo" android:id="@+id/imageView3"
+            android:id="@+id/imageView3"
+            android:layout_width="311dp"
+            android:layout_height="292dp"
+            app:srcCompat="@drawable/gamevault_logo"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/loginButton" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.524"
-            app:layout_constraintVertical_bias="0.219"/>
+            app:layout_constraintBottom_toTopOf="@+id/emailTextField"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5"
+
+    />
     <EditText
+            android:id="@+id/emailTextField"
             android:layout_width="211dp"
             android:layout_height="48dp"
             android:inputType="textEmailAddress"
@@ -47,12 +67,16 @@
             android:hint="Email"
             android:textColorHint="@color/white"
             android:ems="10"
-            android:id="@+id/emailTextField"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            app:layout_constraintBottom_toTopOf="@+id/passwordTextField" app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintBottom_toTopOf="@+id/passwordTextField"
+            app:layout_constraintHorizontal_bias="0.53"
+
+            android:padding="8dp"
             app:layout_constraintVertical_bias="0.495"/>
     <EditText
+            android:id="@+id/passwordTextField"
             android:layout_width="213dp"
             android:layout_height="48dp"
             android:inputType="textPassword"
@@ -61,9 +85,12 @@
             android:hint="Password"
             android:textColorHint="@color/white"
             android:ems="10"
-            android:id="@+id/passwordTextField"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/loginButton"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/loginButton"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextField"
+            app:layout_constraintHorizontal_bias="0.535"
+
+            android:padding="8dp"
             app:layout_constraintVertical_bias="0.737"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
