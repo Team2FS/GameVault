@@ -17,10 +17,10 @@ public class BuyUsACoffee extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy_us_acoffee); // Ensure this matches your XML file name
 
-        // Initialize the button
+
         Button donateButton = findViewById(R.id.DonateButton); // Ensure this ID matches the button in your XML
 
-        // Set up the click listener for the button
+
         donateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +30,7 @@ public class BuyUsACoffee extends AppCompatActivity {
     }
 
     private void openKoFiWebsite() {
-        String koFiUrl = "https://ko-fi.com/GameVaultDevs"; // Ko-fi website URL
+        String koFiUrl = "https://ko-fi.com/GameVaultDevs";
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(koFiUrl));
         startActivity(intent);
