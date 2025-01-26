@@ -12,6 +12,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/frameLayout">
 
+        <!--
         <Button
                 android:id="@+id/ToggleTheme"
                 android:layout_width="400dp"
@@ -23,19 +24,21 @@
                 android:backgroundTint="#BDBDBD"
                 android:textColor="@color/black"
                 android:layout_marginTop="16dp" />
+                -->
 
         <Button
                 android:id="@+id/ManageProfile"
                 android:layout_width="400dp"
                 android:layout_height="52dp"
                 android:text="Manage Profile"
-                app:layout_constraintTop_toBottomOf="@+id/ToggleTheme"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:backgroundTint="#BDBDBD"
                 android:textColor="@color/black"
                 android:layout_marginTop="16dp" />
 
+        <!--
         <Button
                 android:id="@+id/ManageLinkedAccounts"
                 android:layout_width="400dp"
@@ -47,13 +50,14 @@
                 android:backgroundTint="#BDBDBD"
                 android:textColor="@color/black"
                 android:layout_marginTop="16dp" />
+                -->
 
         <Button
                 android:id="@+id/ManageCamoProgress"
                 android:layout_width="400dp"
                 android:layout_height="52dp"
                 android:text="Manage Camo Progress"
-                app:layout_constraintTop_toBottomOf="@+id/ManageLinkedAccounts"
+                app:layout_constraintTop_toBottomOf="@+id/ManageProfile"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:backgroundTint="#BDBDBD"
