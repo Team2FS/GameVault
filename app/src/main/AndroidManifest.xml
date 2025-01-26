@@ -19,7 +19,7 @@
                 android:name=".ui.settings.BuyUsACoffee.BuyUsACoffee"
                 android:exported="false"/>
         <activity
-                android:name=".ui.settings.BuyUsCoffee.BuyUsACoffee"
+                android:name=".ui.settings.BuyUsACoffee.BuyUsACoffee"
                 android:exported="false"
                 tools:ignore="DuplicateActivity"/>
         <activity
