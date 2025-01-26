@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
+import com.example.gamevault.ui.settings.BuyUsACoffee.BuyUsACoffee;
 import com.example.gamevault.ui.settings.manageprofile.ManageProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.example.gamevault.ui.settings.credits.Credits;
@@ -82,6 +83,8 @@ public class SettingsFragment extends Fragment {
         // Handle Donate button
         binding.Donate.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Donate Clicked");
+            Intent intent = new Intent(getActivity(), BuyUsACoffee.class);
+            startActivity(intent);
         });
         // Handle Credits button
         binding.Credits.setOnClickListener(v -> {
