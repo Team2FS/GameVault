@@ -16,6 +16,10 @@
             android:theme="@style/Theme.GameVault"
             tools:targetApi="31">
         <activity
+                android:name=".ui.settings.BuyUsACoffee.BuyUsACoffee"
+                android:exported="false"/>
+
+        <activity
                 android:name=".ui.CallOfDutyWarzone.warzoneMainActivity"
                 android:exported="false"/>
         <activity
