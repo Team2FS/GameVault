@@ -21,6 +21,12 @@
                 android:exported="false"/>
 
         <activity
+                android:name=".ui.CallOfDutyWarzone.warzoneMainActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MainActivity"
+                android:exported="false"/>
+        <activity
                 android:name=".ui.settings.suggestfeature.SuggestFeatureActivity"
                 android:exported="false"/>
         <activity
