@@ -12,10 +12,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
+import com.example.gamevault.ui.settings.BuyUsACoffee.BuyUsACoffee;
 import com.example.gamevault.ui.settings.manageprofile.ManageProfileActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.example.gamevault.ui.settings.credits.Credits;
@@ -38,9 +40,25 @@ public class SettingsFragment extends Fragment {
                 new ViewModelProvider(this).get(SettingsViewModel.class);
 
         // Handle Button click using View Binding
-        binding.ToggleTheme.setOnClickListener(v -> {
-            Log.d("SettingsFragment", "Toggle Theme Clicked");
-        });
+//        binding.ToggleTheme.setOnClickListener(v -> {
+//            Log.d("SettingsFragment", "Toggle Theme Clicked");
+//
+//            SharedPreferences sharedPreferences = requireContext().getSharedPreferences("Profile", Context.MODE_PRIVATE);
+//            boolean isDarkModeEnabled = sharedPreferences.getBoolean("isDarkModeEnabled", true);
+//
+//            if (isDarkModeEnabled) {
+//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+//                SharedPreferences.Editor editor = sharedPreferences.edit();
+//                editor.putBoolean("isDarkModeEnabled", false);
+//                editor.apply();
+//            }
+//            else {
+//                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+//                SharedPreferences.Editor editor = sharedPreferences.edit();
+//                editor.putBoolean("isDarkModeEnabled", true);
+//                editor.apply();
+//            }
+//        });
         // Handle manage profile button
         binding.ManageProfile.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Profile Clicked");
@@ -48,10 +66,10 @@ public class SettingsFragment extends Fragment {
             startActivity(intent);
 
         });
-        // Handle manage linked accounts button
-        binding.ManageLinkedAccounts.setOnClickListener(v -> {
-            Log.d("SettingsFragment", "Manage Linked Accounts Clicked");
-        });
+//        // Handle manage linked accounts button
+//        binding.ManageLinkedAccounts.setOnClickListener(v -> {
+//            Log.d("SettingsFragment", "Manage Linked Accounts Clicked");
+//        });
         // Handle manage camo progress button
         binding.ManageCamoProgress.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Camo Progress Clicked");
@@ -65,6 +83,8 @@ public class SettingsFragment extends Fragment {
         // Handle Donate button
         binding.Donate.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Donate Clicked");
+            Intent intent = new Intent(getActivity(), BuyUsACoffee.class);
+            startActivity(intent);
         });
         // Handle Credits button
         binding.Credits.setOnClickListener(v -> {
