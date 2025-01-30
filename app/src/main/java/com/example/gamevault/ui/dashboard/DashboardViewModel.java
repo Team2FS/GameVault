@@ -10,7 +10,7 @@ public class DashboardViewModel extends ViewModel {
 
     public DashboardViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue(""); //empty string so nothing appears
+        mText.setValue(""); //removed text from displaying
     }
 
     public LiveData<String> getText() {

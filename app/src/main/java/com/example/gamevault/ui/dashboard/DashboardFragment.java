@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,14 +29,13 @@ public class DashboardFragment extends Fragment {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-
-        //attach listeners for haptic feedback
+        // Attach listeners for haptic feedback
         setClickListener(binding.game1Thumbnail, "Call of Duty: Black Ops 6");
         setClickListener(binding.game2Thumbnail, "Call of Duty: Warzone 2.0");
         setClickListener(binding.game3Thumbnail, "Call of Duty: Modern Warfare 3");
         setClickListener(binding.game4Thumbnail, "Call of Duty: Modern Warfare 2");
-        setClickListener(binding.game5Thumbnail, "Call of Duty: Black Ops Cold War");
-        setClickListener(binding.game6Thumbnail, "Call of Duty: Black Ops 4");
+        setClickListener(binding.game5Thumbnail, "Call of Duty: Black Ops 4");
+        setClickListener(binding.game6Thumbnail, "Call of Duty: Cold War");
 
         return root;
     }
@@ -49,10 +47,8 @@ public class DashboardFragment extends Fragment {
                 Vibrator vibrator = (Vibrator) requireContext().getSystemService(Context.VIBRATOR_SERVICE);
                 if (vibrator != null && vibrator.hasVibrator()) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                        //for API 26+
                         vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
                     } else {
-                        //for older devices
                         vibrator.vibrate(50);
                     }
                 }
