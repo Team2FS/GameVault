@@ -32,6 +32,18 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintVertical_bias="0.693"/>
+    <Button
+            android:text="Forgot Password?"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+
+            android:id="@+id/forgotPasswordButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.923"/>
     <ImageView
             android:layout_width="210dp"
             android:layout_height="200dp"

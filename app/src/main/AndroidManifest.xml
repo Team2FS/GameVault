@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Internet Permission -->
     <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Vibration Permission -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
             android:name=".GameVaultConfig"
@@ -16,6 +20,7 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.GameVault"
             tools:targetApi="31">
+
         <activity
                 android:name=".ui.CallOfDutyBo6.bo6ZombieMainActivity"
                 android:exported="false"/>
@@ -173,7 +178,6 @@
                 android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>

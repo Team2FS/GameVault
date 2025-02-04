@@ -15,10 +15,10 @@ public class BuyUsACoffee extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy_us_acoffee); // Ensure this matches your XML file name
+        setContentView(R.layout.activity_buy_us_acoffee);
 
 
-        Button donateButton = findViewById(R.id.DonateButton); // Ensure this ID matches the button in your XML
+        Button donateButton = findViewById(R.id.DonateButton);
 
 
         donateButton.setOnClickListener(new View.OnClickListener() {

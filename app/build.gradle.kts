@@ -52,7 +52,10 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-storage:latest_version")
     implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-storage:21.0.1")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation("androidx.gridlayout:gridlayout:1.0.0")
 //    implementation("com.google.firebase:firebase-analytics")
 //    implementation("com.google.firebase:firebase-crashlytics")
-//    implementation("com.google.firebase:firebase-firestore")
 }
