@@ -124,7 +124,7 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view_rss_feed"
+                android:id="@+id/recycler_view_news"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
