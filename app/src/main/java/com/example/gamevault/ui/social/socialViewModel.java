@@ -1,13 +1,13 @@
-package com.example.gamevault.ui.notifications;
+package com.example.gamevault.ui.social;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
+public class socialViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public socialViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is notifications fragment");
     }
