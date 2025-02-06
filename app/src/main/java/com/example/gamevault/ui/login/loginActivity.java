@@ -70,6 +70,7 @@ public class loginActivity extends AppCompatActivity {
         // Buttons in order
         Button loginButton = findViewById(R.id.loginButton);
         Button signUpButton = findViewById(R.id.signUpButton);
+        Button forgotPasswordButton = findViewById(R.id.forgotPasswordButton);
 
         // Listeners
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -152,6 +153,7 @@ public class loginActivity extends AppCompatActivity {
                                     Toast.makeText(loginActivity.this, "Authentication failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             });
+
                 }
             }
         });
@@ -176,6 +178,28 @@ public class loginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        forgotPasswordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = emailField.getText().toString().trim();
+
+                if (email.isEmpty()) {
+                    Toast.makeText(loginActivity.this, "Please enter your email to reset password.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                mAuth.sendPasswordResetEmail(email)
+                        .addOnCompleteListener(task -> {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(loginActivity.this, "Password reset email sent! Check your inbox.", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(loginActivity.this, "Failed to send reset email: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        });
+            }
+        });
+
     }
 
     private void reload() {
