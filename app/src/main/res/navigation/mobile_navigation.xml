@@ -18,9 +18,9 @@
             tools:layout="@layout/fragment_dashboard"/>
 
     <fragment
-            android:id="@+id/navigation_notifications"
+            android:id="@+id/navigation_social"
             android:name="com.example.gamevault.ui.social.socialFragment"
-            android:label="@string/title_notifications"
+            android:label="@string/title_social"
             tools:layout="@layout/fragment_social"/>
     <fragment
             android:id="@+id/navigation_settings"

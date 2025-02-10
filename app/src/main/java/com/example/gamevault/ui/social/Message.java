@@ -5,7 +5,7 @@ public class Message {
     private String message;
     private long timestamp;
 
-    public Message() {
+    public Message(String content) {
 
     }
 
