@@ -10,8 +10,8 @@
             android:title="@string/title_dashboard" android:icon="@android:drawable/ic_menu_myplaces"/>
 
     <item
-            android:id="@+id/navigation_notifications"
-            android:title="@string/title_notifications" android:icon="@android:drawable/ic_popup_reminder"/>
+            android:id="@+id/navigation_social"
+            android:title="@string/title_social" android:icon="@android:drawable/ic_popup_reminder"/>
     <item
             android:id="@+id/navigation_settings"
             android:title="@string/title_settings" android:icon="@android:drawable/ic_menu_preferences"/>
