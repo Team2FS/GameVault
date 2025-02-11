@@ -62,15 +62,6 @@
                     android:text="Manage Profile"
                     android:padding="8dp" />
 
-            <Button
-                    android:id="@+id/btn_dashboard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:backgroundTint="#BDBDBD"
-                    android:textColor="@color/black"
-                    android:text="Visit Dashboard"
-                    android:padding="8dp" />
         </LinearLayout>
 
         <!-- News Feed Section -->
@@ -91,24 +82,17 @@
                     android:id="@+id/news_feed_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Latest News"
+                    android:text="Latest Updates"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="8dp"
-                    android:gravity="center" />
-            <TextView
-                    android:id="@+id/news_item_placeholder"
+                    android:gravity="center"/>
+            <ListView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="• Version 1.2 is live with new camo challenges for season 2!"
-                    android:layout_marginBottom="4dp" android:textAlignment="center"/>
+                    android:layout_height="106dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/apiUpdates"/>
 
-            <TextView
-                    android:id="@+id/news_item_placeholder2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="• Double XP Weekend starts Friday!"
-                    android:layout_marginBottom="4dp" android:textAlignment="center"/>
         </LinearLayout>
 
         <!-- RSS Feed Section -->
