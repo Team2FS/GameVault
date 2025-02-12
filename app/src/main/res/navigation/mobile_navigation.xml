@@ -5,26 +5,45 @@
             android:id="@+id/mobile_navigation"
             app:startDestination="@+id/navigation_home">
 
+    <!-- Home Fragment -->
     <fragment
             android:id="@+id/navigation_home"
             android:name="com.example.gamevault.ui.home.HomeFragment"
             android:label="@string/title_home"
             tools:layout="@layout/fragment_home"/>
 
+    <!-- Dashboard Fragment -->
     <fragment
             android:id="@+id/navigation_dashboard"
             android:name="com.example.gamevault.ui.dashboard.DashboardFragment"
             android:label="@string/title_dashboard"
-            tools:layout="@layout/fragment_dashboard"/>
+            tools:layout="@layout/fragment_dashboard">
 
+        <!-- Action: Navigate to GameModeFragment -->
+        <action
+                android:id="@+id/action_dashboard_to_gameMode"
+                app:destination="@id/gameModeFragment"/>
+
+    </fragment>
+
+    <!-- Notifications Fragment -->
     <fragment
             android:id="@+id/navigation_notifications"
             android:name="com.example.gamevault.ui.notifications.NotificationsFragment"
             android:label="@string/title_notifications"
             tools:layout="@layout/fragment_notifications"/>
+
+    <!-- Settings Fragment -->
     <fragment
             android:id="@+id/navigation_settings"
             android:name="com.example.gamevault.ui.settings.SettingsFragment"
             android:label="@string/title_settings"
             tools:layout="@layout/fragment_settings"/>
+
+    <!-- Game Mode Fragment -->
+    <fragment
+            android:id="@+id/gameModeFragment"
+            android:name="com.example.gamevault.ui.gamemode.GameModeFragment"
+            android:label="Select Game Mode"
+            tools:layout="@layout/fragment_game_mode"/>
 </navigation>

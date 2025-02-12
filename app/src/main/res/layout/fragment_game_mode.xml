@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@android:color/black"
+        tools:context=".ui.gamemode.GameModeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <!-- Toolbar with Back Button -->
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/game_mode_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                app:title="Select Game Mode"
+                app:titleTextColor="@android:color/white"
+                app:navigationIcon="@drawable/ic_back_arrow" />
+
+        <!-- Game Title -->
+        <TextView
+                android:id="@+id/game_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/game_mode_toolbar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Game Image -->
+        <ImageView
+                android:id="@+id/game_image"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toBottomOf="@id/game_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Multiplayer Button -->
+        <Button
+                android:id="@+id/btn_multiplayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_500"
+                android:text="MULTIPLAYER"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/game_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+        <!-- Zombies Button (if game has Zombies) -->
+        <Button
+                android:id="@+id/btn_zombies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_500"
+                android:text="ZOMBIES"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/btn_multiplayer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+        <!-- Warzone Button (if game has Warzone) -->
+        <Button
+                android:id="@+id/btn_warzone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_500"
+                android:text="WARZONE"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/btn_zombies"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
