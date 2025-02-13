@@ -1,55 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieMaps.bo6ZombieCitadelleDesMortsActivity"
-        android:background="@color/black">
 
-    <TextView
-            android:text="Map Layout"
-            android:textColor="@color/white"
-            android:textSize="40dp"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
-            android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView14"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.474" app:layout_constraintHorizontal_bias="0.5"/>
-    <TextView
-            android:text="Citadelle Des Morts"
-            android:textColor="@color/white"
-            android:textSize="40dp"
+            android:orientation="vertical"
+            tools:context=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieMaps.bo6ZombieCitadelleDesMortsActivity"
+            android:padding="40dp"
+            tools:layout_editor_absoluteY="-42dp"
+            tools:layout_editor_absoluteX="0dp"
+            android:background="@color/black">
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView12"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.024" app:layout_constraintHorizontal_bias="0.5"/>
-    <ImageView
-            android:src="@drawable/citadelledesmorts"
-            android:layout_width="300dp"
-            android:layout_height="275dp"
-            android:id="@+id/imageView10"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintVertical_bias="0.057"/>
-    <ImageView
-            android:src="@drawable/citadelledesmortsblueprint"
-            android:layout_width="300dp"
-            android:layout_height="275dp" android:id="@+id/imageView12"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.881"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+                android:text="About the map"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView18"
+                android:layout_marginTop="36dp" app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintVertical_bias="0.0"/>
+        <TextView
+                android:text="Perk List"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                android:layout_marginTop="12dp" app:layout_constraintBottom_toTopOf="@+id/textView22"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502" app:layout_constraintVertical_bias="0.388"/>
+        <TextView
+                android:text="Citadelle des Morts is a dark and atmospheric Zombies map set in a ruined medieval fortress along a fog-covered coastline. The map is filled with eerie corridors, towering stone walls, and crumbling battlements, offering a blend of tight indoor spaces and open courtyards for intense combat encounters.  The setting tells a story of an ancient order that once resided within the citadel, now overrun by hordes of the undead. Players must navigate through various sections, such as the overgrown gardens, flooded dungeons, and an abandoned village just outside the fortress walls. Secret passageways and hidden chambers hold powerful weapons and mysterious artifacts that hint at the castle's sinister past.  Gameplay revolves around survival, exploration, and uncovering the map’s deeper secrets. Traps such as collapsing floors, spiked gates, and explosive barrels add another layer of strategy, forcing players to be mindful of their surroundings. Special enemies, including armored undead knights and spectral wraiths, provide unique challenges that require teamwork and quick thinking to overcome.  Mystical elements play a key role in the map’s mechanics, with a powerful relic at the heart of the citadel offering new abilities or weapon upgrades. A series of ancient puzzles and rituals must be completed to unlock hidden areas and access legendary weapons.  Overall, &quot;Citadelle des Morts&quot; delivers a haunting and immersive experience, blending classic Zombies gameplay with a rich, gothic-inspired setting full of secrets, dangers, and rewards."
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView19"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="912dp"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="In the Citadelle des Morts Zombies map of Call of Duty: Black Ops 6, players can enhance their abilities by acquiring various Perk-a-Colas. Here's a list of available perks and their locations within the map:
+
+Jugger-Nog: Increases player health, allowing for greater damage absorption.
+
+Quick Revive: Speeds up the reviving process of downed teammates; in solo play, it can self-revive the player.
+
+Speed Cola: Accelerates weapon reload times, enabling faster combat readiness.
+
+Stamin-Up: Boosts sprint duration and movement speed, facilitating quicker navigation.
+
+Deadshot Daiquiri: Enhances aiming precision, reducing hip-fire spread and snapping aim to enemy heads.
+
+Elemental Pop: Grants a chance for bullets to trigger random alternate ammo types, adding elemental effects to shots.
+
+Melee Macchiato: A new perk exclusive to Black Ops 6, focusing on enhancing melee capabilities.
+GAMERANT.COM
+
+Vulture Aid: Displays item locations and causes zombies to drop small ammo and point pickups upon death.
+
+PhD Flopper: Negates self-inflicted explosive damage and triggers an explosive blast upon diving to prone.
+
+Death Perception: Highlights nearby enemies, even through walls, and increases salvage drop rates.
+
+Additionally, the Der Wunderfizz machine is available in the Town Square, allowing players to purchase any of the above perks at an increased cost.
+CALLOFDUTY.COM"
+                android:layout_width="414dp"
+                android:layout_height="473dp"
+                android:id="@+id/textView22"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="1504dp"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:text="Map Blueprint"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="412dp"
+        />
+        <TextView
+                android:text="Citadelle Des Morts"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+
+                android:layout_width="326dp"
+                android:layout_height="63dp"
+                android:id="@+id/textView16"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="4dp"
+                app:layout_constraintHorizontal_bias="0.5"/>
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="275dp" app:srcCompat="@drawable/citadelledesmorts"
+                android:id="@+id/imageView17"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="88dp" app:layout_constraintEnd_toEndOf="parent"
+        />
+        <ImageView
+                android:layout_width="450dp"
+                android:layout_height="275dp" app:srcCompat="@drawable/citadelledesmortsblueprint"
+                android:id="@+id/imageView18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="520dp" app:layout_constraintHorizontal_bias="0.5"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
