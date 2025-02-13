@@ -25,6 +25,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.gamevault.databinding.FragmentSettingsBinding;
 import com.example.gamevault.ui.login.loginActivity;
 import com.example.gamevault.ui.settings.BuyUsACoffee.BuyUsACoffee;
+import com.example.gamevault.ui.settings.camosync.CamoSync;
 import com.example.gamevault.ui.settings.manageprofile.ManageProfileActivity;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.EmailAuthProvider;
@@ -86,6 +87,8 @@ public class SettingsFragment extends Fragment {
         // Handle manage camo progress button
         binding.ManageCamoProgress.setOnClickListener(v -> {
             Log.d("SettingsFragment", "Manage Camo Progress Clicked");
+            Intent intent = new Intent(getActivity(), CamoSync.class);
+            startActivity(intent);
         });
         // Handle Suggest Feature button
         binding.SuggestFeature.setOnClickListener(v -> {
