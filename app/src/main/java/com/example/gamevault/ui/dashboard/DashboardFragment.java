@@ -29,7 +29,7 @@ public class DashboardFragment extends Fragment {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        // Attach listeners for haptic feedback
+        //attach listeners for haptic feedback
         setClickListener(binding.game1Thumbnail, "Call of Duty: Black Ops 6");
         setClickListener(binding.game2Thumbnail, "Call of Duty: Warzone 2.0");
         setClickListener(binding.game3Thumbnail, "Call of Duty: Modern Warfare 3");
@@ -47,14 +47,19 @@ public class DashboardFragment extends Fragment {
                 Vibrator vibrator = (Vibrator) requireContext().getSystemService(Context.VIBRATOR_SERVICE);
                 if (vibrator != null && vibrator.hasVibrator()) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        //for API 26+
                         vibrator.vibrate(VibrationEffect.createOneShot(50, VibrationEffect.DEFAULT_AMPLITUDE));
                     } else {
+                        //for older devices
                         vibrator.vibrate(50);
                     }
                 }
 
+                //remove "Call of Duty" from the message
+                String shortGameName = gameName.replace("Call of Duty: ", "");
+
                 //show toast message
-                Toast.makeText(getContext(), "Tapped on " + gameName, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Tapped on " + shortGameName, Toast.LENGTH_SHORT).show();
             });
         }
     }
