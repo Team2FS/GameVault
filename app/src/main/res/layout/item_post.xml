@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="16dp">
+
+    <!-- Profile Picture -->
+    <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Profile Picture"
+            android:layout_marginEnd="16dp"/>
+
+    <!-- Post Content -->
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        <!-- Username (Next to Profile Picture) -->
+        <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                android:layout_marginEnd="8dp"/>
+        <!-- Post Content -->
+        <TextView
+                android:id="@+id/postContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Post Image -->
+        <ImageView
+                android:id="@+id/postImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="Post Image"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Post Timestamp -->
+        <TextView
+                android:id="@+id/postTimestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#9E9E9E"
+                android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</LinearLayout>
