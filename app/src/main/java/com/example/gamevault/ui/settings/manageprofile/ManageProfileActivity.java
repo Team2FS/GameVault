@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -22,13 +21,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-import com.google.firebase.firestore.DocumentSnapshot;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
 import com.bumptech.glide.Glide;
 
@@ -41,7 +36,7 @@ public class ManageProfileActivity extends AppCompatActivity {
     private FirebaseFirestore firestore;
     private StorageReference storageReference;
     private String currentImageUrl = null; // Stores the existing image URL
-    private EditText etBio, etPhone, etEmail;
+    private EditText etUsername, etPhone, etEmail;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -61,7 +56,7 @@ public class ManageProfileActivity extends AppCompatActivity {
         profileImage = findViewById(R.id.profileImageView);
         btnChangePicture = findViewById(R.id.btnChangePicture);
         btnSaveProfile = findViewById(R.id.btnSaveProfile);
-        etBio = findViewById(R.id.etBio);
+        etUsername = findViewById(R.id.etUsername);
         etPhone = findViewById(R.id.etPhone);
         etEmail = findViewById(R.id.etEmail);
 
@@ -105,7 +100,7 @@ public class ManageProfileActivity extends AppCompatActivity {
         }
 
         // Retrieve user inputs
-        String bio = etBio.getText().toString().trim();
+        String username = etUsername.getText().toString().trim();
         String phone = etPhone.getText().toString().trim();
         String email = etEmail.getText().toString().trim();
 
@@ -117,19 +112,19 @@ public class ManageProfileActivity extends AppCompatActivity {
 
         // If a new image is selected, upload it, otherwise just save text fields
         if (imageUri != null) {
-            uploadImageToFirebase(user.getUid(), bio, phone, email);
+            uploadImageToFirebase(user.getUid(), username, phone, email);
         } else {
-            saveProfileToFirestore(user.getUid(), currentImageUrl, bio, phone, email);
+            saveProfileToFirestore(user.getUid(), currentImageUrl, username, phone, email);
         }
     }
 
-    private void uploadImageToFirebase(String userId, String bio, String phone, String email) {
+    private void uploadImageToFirebase(String userId, String username, String phone, String email) {
         StorageReference fileReference = storageReference.child(userId + ".jpg");
 
         fileReference.putFile(imageUri)
                 .addOnSuccessListener(taskSnapshot -> fileReference.getDownloadUrl().addOnSuccessListener(uri -> {
                     String imageUrl = uri.toString();
-                    saveProfileToFirestore(userId, imageUrl, bio, phone, email);
+                    saveProfileToFirestore(userId, imageUrl, username, phone, email);
                 }))
                 .addOnFailureListener(e -> {
                     Log.e("ManageProfile", "Error uploading image", e);
@@ -137,10 +132,10 @@ public class ManageProfileActivity extends AppCompatActivity {
                 });
     }
 
-    private void saveProfileToFirestore(String userId, String imageUrl, String bio, String phone, String email) {
+    private void saveProfileToFirestore(String userId, String imageUrl, String username, String phone, String email) {
         Map<String, Object> profileData = new HashMap<>();
         profileData.put("imageUrl", imageUrl);
-        profileData.put("bio", bio);
+        profileData.put("username", username);
         profileData.put("phone", phone);
         profileData.put("email", email);
 
@@ -167,14 +162,14 @@ public class ManageProfileActivity extends AppCompatActivity {
                 .addOnSuccessListener(documentSnapshot -> {
                     if (documentSnapshot.exists()) {
                         currentImageUrl = documentSnapshot.getString("imageUrl");
-                        String bio = documentSnapshot.getString("bio");
+                        String username = documentSnapshot.getString("username");
                         String phone = documentSnapshot.getString("phone");
                         String email = documentSnapshot.getString("email");
 
                         if (currentImageUrl != null && !currentImageUrl.isEmpty()) {
                             Glide.with(this).load(currentImageUrl).into(profileImage);
                         }
-                        if (bio != null) etBio.setText(bio);
+                        if (username != null) etUsername.setText(username);
                         if (phone != null) etPhone.setText(phone);
                         if (email != null) etEmail.setText(email);
                     }
