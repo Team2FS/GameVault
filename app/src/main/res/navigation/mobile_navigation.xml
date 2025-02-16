@@ -19,7 +19,7 @@
 
     <fragment
             android:id="@+id/navigation_social"
-            android:name="com.example.gamevault.ui.social.socialFragment"
+            android:name="com.example.gamevault.ui.social.SocialFragment"
             android:label="@string/title_social"
             tools:layout="@layout/fragment_social"/>
     <fragment
