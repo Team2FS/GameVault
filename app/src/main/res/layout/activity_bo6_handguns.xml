@@ -30,11 +30,11 @@
                 android:textSize="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/_9mmText"
-                app:layout_constraintTop_toBottomOf="@+id/_9mm_image"
-                android:layout_marginTop="25dp"
+                android:id="@+id/text_9mm"
+                app:layout_constraintTop_toBottomOf="@+id/image_9mm"
+                android:layout_marginTop="24dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintEnd_toEndOf="parent"/>
         <TextView
                 android:text="GREKHOVA"
@@ -88,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/mm9"
-                android:id="@+id/_9mm_image"
+                android:id="@+id/image_9mm"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="200dp"/>
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/grekhova"
                 android:id="@+id/grekhova_image"
-                app:layout_constraintTop_toBottomOf="@+id/_9mm_image"
+                app:layout_constraintTop_toBottomOf="@+id/image_9mm"
                 android:layout_marginTop="100dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

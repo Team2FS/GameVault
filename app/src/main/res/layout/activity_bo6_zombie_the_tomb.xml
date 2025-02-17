@@ -95,12 +95,5 @@ Perks Available:
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="92dp"/>
-        <ImageView
-                android:layout_width="300dp"
-                android:layout_height="275dp" app:srcCompat="@drawable/theTombBlueprint"
-                android:id="@+id/imageView6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView21"
-                android:layout_marginTop="52dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

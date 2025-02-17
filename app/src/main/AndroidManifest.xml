@@ -18,13 +18,7 @@
         android:theme="@style/Theme.GameVault"
         tools:targetApi="31" >
         <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6WeaponsListZombies.bo6WeaponsListZombiesActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6MultiplayerExtras.bo6WeaponsList.bo6WeaponsListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6Extras.bo6MultiplayerMaps.Bo6MultiplayerMapsActivity"
             android:exported="false" />
         <activity
             android:name=".ui.CallOfDutyMW3.Mw3MainActivity"
@@ -45,34 +39,11 @@
             android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieExtrasActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.testActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6MultiplayerExtras.bo6MultiExtrasActivity"
             android:exported="false" />
         <activity
             android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieMaps.bo6ZombieLibertyFallsActivity"
             android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6Extras.bo6ZombieMaps.LibertyFallsScrollingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_liberty_falls_scrolling"
-            android:theme="@style/Theme.GameVault.NoActionBar" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6Extras.bo6ZombieMaps.bo6ZombieLibertyFallsScrollActivity"
-            android:exported="false"
-            android:label="@string/title_activity_bo6_zombie_liberty_falls_scroll"
-            android:theme="@style/Theme.GameVault.NoActionBar" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6Extras.bo6MultiplayerMaps.nuketownScrollingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_nuketown_scrolling"
-            android:theme="@style/Theme.GameVault.NoActionBar" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.testScrollingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_test_scrolling"
-            android:theme="@style/Theme.GameVault.NoActionBar" />
         <activity
             android:name=".ui.CallOfDutyBo6.bo6Extras.bo6About.bo6AboutBo6Activity"
             android:exported="false" />
@@ -83,9 +54,6 @@
             android:name=".ui.CallOfDutyBo6.bo6Extras.bo6AboutSeason1.bo6Season1Activity"
             android:exported="false" />
         <activity
-            android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6MultiplayerExtras.bo6MultiplayerMaps.bo6MultiMapNuketownActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieMaps.bo6ZombieTheTombActivity"
             android:exported="false" />
         <activity
@@ -93,45 +61,6 @@
             android:exported="false" />
         <activity
             android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieMaps.bo6ZombieTerminusActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6Extras.bo6ZombieMaps.bo6ZombieLibertyfallsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieSpecialActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieSniperActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieSMGSActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieShotgunActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombiePistolActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieMeleeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieMarksmanRifleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieLMGSActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieLauncherActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtrasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieAssaultRifleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6MultiplayerExtrasActivity"
             android:exported="false" />
         <activity
             android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6MeleeWeaponsActivity"
@@ -164,9 +93,6 @@
             android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6SMGSActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SMGSActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.settings.BuyUsACoffee.BuyUsACoffee"
             android:exported="false" />
         <activity
@@ -193,12 +119,12 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
-
 </manifest>
