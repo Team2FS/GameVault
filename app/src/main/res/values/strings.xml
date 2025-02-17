@@ -2,7 +2,7 @@
     <string name="app_name">GameVault</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_social">Social</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -24,6 +24,11 @@
     <string name="change_picture">Change Picture</string>
     <string name="save_profile">Save Profile</string>
     <string name="user_name">Username</string>
+    <string name="title_game_mode">Select Game Mode</string>
+    <string name="btn_multiplayer">MULTIPLAYER</string>
+    <string name="btn_zombies">ZOMBIES</string>
+    <string name="btn_warzone">WARZONE</string>
+    <string name="back">Back</string>
 
     <string name="lorem_ipsum">
 
