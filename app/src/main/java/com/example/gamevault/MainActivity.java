@@ -4,13 +4,17 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+
 import com.example.gamevault.ui.login.loginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
 import com.example.gamevault.databinding.ActivityMainBinding;
 import com.example.gamevault.FirebaseUtility;
 
@@ -25,24 +29,25 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedpreferences = getSharedPreferences("Profile", MODE_PRIVATE);
         boolean isLoggedIn = sharedpreferences.getBoolean("isLoggedIn", false);
 
-        if(!isLoggedIn)//if user is not logged in
-        {
-            Intent intent = new Intent (this, loginActivity.class);//create activity
-
-            startActivity(intent); //start activity
-
-            finish();//finish activity , not going to continue on the rest of the page
+        if (!isLoggedIn) { // If user is not logged in
+            Intent intent = new Intent(this, loginActivity.class); // Create login activity
+            startActivity(intent); // Start activity
+            finish(); // Finish current activity
         }
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
+        // Passing each menu ID as a set of IDs because each menu should be considered top-level destinations
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_social,R.id.navigation_settings)
+                R.id.navigation_home,
+                R.id.navigation_dashboard,
+                R.id.navigation_social,
+                R.id.navigation_settings)
                 .build();
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
@@ -54,7 +59,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Log.e("MainActivity", "Failed to read JSON data");
         }
-
     }
 
+    //enable Toolbar back-button to navigate
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
+        return navController.navigateUp() || super.onSupportNavigateUp();
+    }
 }

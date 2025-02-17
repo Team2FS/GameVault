@@ -7,11 +7,13 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.ImageView;
 import android.widget.Button;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
+import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+
 import com.example.gamevault.R;
 
 public class GameModeFragment extends Fragment {
@@ -28,33 +30,42 @@ public class GameModeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //toolbar Back Button
-        Toolbar toolbar = view.findViewById(R.id.game_mode_toolbar);
-        toolbar.setNavigationOnClickListener(v -> Navigation.findNavController(view).navigateUp());
+        // Handle Android System Back Button
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(),
+                new OnBackPressedCallback(true) {
+                    @Override
+                    public void handleOnBackPressed() {
+                        Navigation.findNavController(view).navigateUp(); // Navigate back
+                    }
+                });
 
-        //get game title and image
+        // Get game title + image from arguments
         if (getArguments() != null) {
             gameTitle = getArguments().getString("gameTitle", "Unknown Game");
             gameImageResId = getArguments().getInt("gameImage", R.drawable.black_ops_4);
         }
 
-        //set game title and image
+        // Set game title and image
         TextView gameTitleTextView = view.findViewById(R.id.game_title);
         gameTitleTextView.setText(gameTitle);
+
         ImageView gameImageView = view.findViewById(R.id.game_image);
         gameImageView.setImageResource(gameImageResId);
 
-        //find buttons
+        // Find buttons
         Button multiplayerButton = view.findViewById(R.id.btn_multiplayer);
         Button zombiesButton = view.findViewById(R.id.btn_zombies);
         Button warzoneButton = view.findViewById(R.id.btn_warzone);
 
-        //handle button clicks
-        multiplayerButton.setOnClickListener(v -> showMessage("Multiplayer selected for " + gameTitle));
-        zombiesButton.setOnClickListener(v -> showMessage("Zombies selected for " + gameTitle));
-        warzoneButton.setOnClickListener(v -> showMessage("Warzone selected for " + gameTitle));
+        // Remove "Call of Duty" from Messages
+        String shortGameName = gameTitle.replace("Call of Duty: ", "");
 
-        //hide buttons if mode isnt available
+        // Handle button clicks
+        multiplayerButton.setOnClickListener(v -> showMessage("Multiplayer selected for " + shortGameName));
+        zombiesButton.setOnClickListener(v -> showMessage("Zombies selected for " + shortGameName));
+        warzoneButton.setOnClickListener(v -> showMessage("Warzone selected for " + shortGameName));
+
+        // Hide buttons if mode isn't available
         if (!gameSupportsZombies(gameTitle)) {
             zombiesButton.setVisibility(View.GONE);
         }

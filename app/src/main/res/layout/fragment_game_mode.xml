@@ -14,16 +14,6 @@
             android:layout_height="wrap_content"
             android:padding="16dp">
 
-        <!-- Toolbar with Back Button -->
-        <androidx.appcompat.widget.Toolbar
-                android:id="@+id/game_mode_toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/black"
-                app:title="Select Game Mode"
-                app:titleTextColor="@android:color/white"
-                app:navigationIcon="@drawable/ic_back_arrow" />
-
         <!-- Game Title -->
         <TextView
                 android:id="@+id/game_title"
@@ -32,7 +22,6 @@
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
-                app:layout_constraintTop_toBottomOf="@id/game_mode_toolbar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -59,7 +48,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="16dp"/>
 
-        <!-- Zombies Button (if game has Zombies) -->
+        <!-- Zombies Button (if available -->
         <Button
                 android:id="@+id/btn_zombies"
                 android:layout_width="wrap_content"
@@ -72,7 +61,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="16dp"/>
 
-        <!-- Warzone Button (if game has Warzone) -->
+        <!-- Warzone Button (if available) -->
         <Button
                 android:id="@+id/btn_warzone"
                 android:layout_width="wrap_content"
@@ -84,6 +73,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="16dp"/>
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
