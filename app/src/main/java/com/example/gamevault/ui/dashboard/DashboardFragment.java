@@ -84,6 +84,10 @@ public class DashboardFragment extends Fragment {
                     }
                 }
 
+                // Show Toast Confirmation
+                String shortGameName = gameName.replace("Call of Duty: ", "");
+                Toast.makeText(getContext(), "Selected: " + shortGameName, Toast.LENGTH_SHORT).show();
+
                 // Pass game details to GameModeFragment
                 Bundle bundle = new Bundle();
                 bundle.putString("gameTitle", gameName);
