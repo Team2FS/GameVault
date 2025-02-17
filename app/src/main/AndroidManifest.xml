@@ -119,6 +119,7 @@
         <activity
                 android:name=".ui.settings.credits.Credits"
                 android:exported="false"/>
+        <activity android:name=".ui.social.UserProfileActivity"/>
         <activity
                 android:name=".MainActivity"
                 android:exported="true"
