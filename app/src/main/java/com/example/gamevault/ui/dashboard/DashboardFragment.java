@@ -21,6 +21,7 @@ import com.example.gamevault.R;
 import com.example.gamevault.databinding.FragmentDashboardBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class DashboardFragment extends Fragment {

@@ -57,13 +57,10 @@ public class GameModeFragment extends Fragment {
         Button zombiesButton = view.findViewById(R.id.btn_zombies);
         Button warzoneButton = view.findViewById(R.id.btn_warzone);
 
-        // Remove "Call of Duty" from Messages
-        String shortGameName = gameTitle.replace("Call of Duty: ", "");
-
-        // Handle button clicks
-        multiplayerButton.setOnClickListener(v -> showMessage("Multiplayer selected for " + shortGameName));
-        zombiesButton.setOnClickListener(v -> showMessage("Zombies selected for " + shortGameName));
-        warzoneButton.setOnClickListener(v -> showMessage("Warzone selected for " + shortGameName));
+        // Handle button clicks (Toast shows Mode instead of Game)
+        multiplayerButton.setOnClickListener(v -> showMessage("Selected: Multiplayer"));
+        zombiesButton.setOnClickListener(v -> showMessage("Selected: Zombies"));
+        warzoneButton.setOnClickListener(v -> showMessage("Selected: Warzone"));
 
         // Hide buttons if mode isn't available
         if (!gameSupportsZombies(gameTitle)) {
