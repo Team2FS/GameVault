@@ -27,4 +27,22 @@
             android:name="com.example.gamevault.ui.settings.SettingsFragment"
             android:label="@string/title_settings"
             tools:layout="@layout/fragment_settings"/>
+    <fragment
+            android:id="@+id/navigation_dashboard"
+            android:name="com.example.gamevault.ui.dashboard.DashboardFragment"
+            android:label="@string/title_dashboard"
+            tools:layout="@layout/fragment_dashboard">
+        <action
+                android:id="@+id/action_dashboard_to_gameMode"
+                app:destination="@id/gameModeFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/gameModeFragment"
+            android:name="com.example.gamevault.ui.gamemode.GameModeFragment"
+            android:label="@string/title_game_mode"
+            tools:layout="@layout/fragment_game_mode"/>
+
+
+
 </navigation>
