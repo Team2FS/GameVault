@@ -33,6 +33,8 @@ android {
 }
 
 dependencies {
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.8.5")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.google.android.material:material:1.12.0")
@@ -56,6 +58,7 @@ dependencies {
     implementation("com.google.firebase:firebase-storage:21.0.1")
     implementation("com.github.bumptech.glide:glide:4.12.0")
     implementation("androidx.gridlayout:gridlayout:1.0.0")
+
 //    implementation("com.google.firebase:firebase-analytics")
 //    implementation("com.google.firebase:firebase-crashlytics")
 }
