@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.gamevault.R;
 import com.example.gamevault.databinding.FragmentHomeBinding;
+import com.example.gamevault.ui.home.favoritechallenges.CustomAdapterFavorites;
 import com.example.gamevault.ui.home.newsfeed.CustomAdapter;
 import com.example.gamevault.ui.settings.manageprofile.ManageProfileActivity;
 import okhttp3.Call;
@@ -32,8 +33,10 @@ import java.util.List;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
-    private RecyclerView recyclerView;
+    private RecyclerView recyclerViewNews;
+    private RecyclerView recyclerViewFavorites;
     private CustomAdapter adapter;
+    private CustomAdapterFavorites customAdapterFavorites;
     private ListView listView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -53,20 +56,50 @@ public class HomeFragment extends Fragment {
             });
 
         // Init RecyclerView using binding
-        recyclerView = binding.recyclerViewNews;
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerViewNews  = binding.recyclerViewNews;
+        recyclerViewNews.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        //Init recyclerview using binding for Favorite Challenges
+        recyclerViewFavorites = binding.recyclerViewProgress;
+        recyclerViewFavorites.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        // tie apiupdates list to variable
         listView = binding.apiUpdates;
 
 
 
 
         // async call to fetch the data before returning vieww
+        populateFavoritesDummy();
         fetchDataInBackground();
         updateListView();
 
 
         // must return root in order to display view.
         return root;
+    }
+
+    private void populateFavoritesDummy() {
+        List<ChallengeCard> challengeCards = new ArrayList<>();
+
+        // Create dummy challenge cards
+        for (int i = 0; i < 3; i++) {
+            ChallengeCard tempChallengeCard = new ChallengeCard(
+                    "gun_placeholder",
+                    "Challenge" + (i + 1),
+                    "Get 20 Headshot Kills",
+                    20,
+                    i * 5,
+                    true
+            );
+            challengeCards.add(tempChallengeCard);
+        }
+
+        // Set adapter only if RecyclerView is initialized
+        if (recyclerViewFavorites != null) {
+            customAdapterFavorites = new CustomAdapterFavorites(challengeCards);
+            recyclerViewFavorites.setAdapter(customAdapterFavorites);
+        }
     }
 
     private void fetchDataInBackground() { // well have to do this because it was running on main thread.
@@ -76,9 +109,9 @@ public class HomeFragment extends Fragment {
 
             new Handler(Looper.getMainLooper()).post(() -> {
                 // Ensure recyclerView is properly set before setting the adapter
-                if (recyclerView != null) {
+                if (recyclerViewNews != null) {
                     adapter = new CustomAdapter(articles);
-                    recyclerView.setAdapter(adapter);
+                    recyclerViewNews.setAdapter(adapter);
                 }
             });
         }).start();
@@ -208,5 +241,66 @@ public class HomeFragment extends Fragment {
         }
 
 
+    }
+    public static class ChallengeCard { // use a model to define one single article the use the object properties to fill the card
+        private String imageName;
+        private String camoName;
+        private String camoDescription;
+        private int numRequired;
+        private int currentNumAchieved;
+        private boolean isFavourite;
+
+
+
+        public ChallengeCard(String imageName, String camoName, String camoDescription, int numRequired, int currentNumAchieved, boolean isFavourite) {
+            this.imageName = imageName;
+            this.camoName = camoName;
+            this.camoDescription = camoDescription;
+            this.numRequired = numRequired;
+            this.currentNumAchieved = currentNumAchieved;
+            this.isFavourite = isFavourite;
+        }
+
+    public String getImageName() {
+            return imageName;
+    }
+    public String getCamoName() {
+            return camoName;
+    }
+    public String getCamoDescription() {
+            return camoDescription;
+    }
+    public int getNumRequired() {
+            return numRequired;
+    }
+    public int getCurrentNumAchieved() {
+            return currentNumAchieved;
+    }
+    public boolean isFavourite() {
+            return isFavourite;
+    }
+        public void setCamoName(String camoName) {
+            this.camoName = camoName;
+        }
+
+        public void setCamoDescription(String camoDescription) {
+            this.camoDescription = camoDescription;
+        }
+
+        public void setImageName(String imageName) {
+            this.imageName = imageName;
+        }
+
+        public void setNumRequired(int numRequired) {
+            this.numRequired = numRequired;
+        }
+
+        public void setCurrentNumAchieved(int currentNumAchieved) {
+            this.currentNumAchieved = currentNumAchieved;
+        }
+
+        public void setFavourite(boolean isFavourite) {
+            this.isFavourite = isFavourite;
+        }
     }
 }
