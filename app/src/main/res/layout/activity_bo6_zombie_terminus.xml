@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieMaps.bo6ZombieTerminusActivity"
+        android:background="@color/black">
+    <TextView
+            android:text="Terminus is a Zombies map in Call of Duty: Black Ops 6, set on Terminus Island, a heavily fortified research facility in the Philippine Sea that was once home to Project Janus, a secretive program experimenting with the Dark Aether. Following the downfall of Requiem, former operatives find themselves imprisoned on the island, only to be caught in the middle of a terrifying outbreak. Now, players must fight their way through the undead, uncover the disturbing truth behind the experiments, and attempt to escape before it's too late.
+
+The map features a diverse and atmospheric environment, blending high-security prison blocks, underground research laboratories, tight industrial corridors, and overgrown jungle paths. The interior sections create claustrophobic, close-quarters combat scenarios, while the exterior jungle terrain introduces environmental hazards and unpredictable zombie encounters.
+
+Terminus introduces a variety of new gameplay mechanics and unique elements, including Dark Aether-mutated zombies, deadly tentacle traps, and powerful cannon defenses to hold back the undead. Players will also navigate dimly lit, decayed research labs, where failed experiments lurk, and underground tunnels that hide more secrets than answers. Boss encounters are a key challenge, with grotesque, biologically enhanced enemies standing in the way of survival. To fight back, players can utilize classic Wonder Weapons alongside experimental arms tied to Project Janus, adding new layers of strategy to the combat.
+
+The tone of Terminus is dark and foreboding, combining elements of military-industrial horror and bio-research gone wrong. With eerie sound design, malfunctioning security systems, and the looming threat of something even worse than the undead, the map keeps players on edge from start to finish. Stealth, survival, and high-intensity combat blend together, making Terminus one of the most intense and immersive Zombies experiences in Black Ops 6."
+            android:layout_width="446dp"
+            android:layout_height="590dp"
+            android:id="@+id/textView13"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" android:layout_marginTop="36dp"/>
+    <TextView
+            android:text="
+    Perks Available in Terminus:
+    1. Juggernog – Increases the player's health, allowing them to withstand more hits before going down. Essential for late rounds.
+    2. Speed Cola – Reduces reload time significantly, allowing for faster weapon handling.
+    3. Quick Revive – In solo mode, revives the player. In co-op, speeds up teammate revives.
+    4. Stamin-Up – Increases movement speed and sprint duration.
+    5. Deadshot Daiquiri – Auto-locks aim to zombie heads and increases headshot damage.
+    6. Elemental Pop – Grants a random ammo mod effect on bullets.
+    7. Death Perception – Highlights zombies through walls and increases salvage drop rates.
+    8. Bloodhound Brew (Exclusive to Terminus) – Boosts melee attack damage and grants lifesteal on melee kills.
+    9. Resonance Tonic (Exclusive to Terminus) – Enhances Dark Aether weapon damage and energy recharge rates.
+    10. Tombstone Soda – Drops a tombstone containing weapons and points upon death for later retrieval."
+            android:layout_width="464dp"
+            android:layout_height="528dp"
+            android:id="@+id/textView11"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            android:layout_marginTop="784dp"
+    />
+    <TextView
+                android:text="About the map"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="836dp"
+                app:layout_constraintHorizontal_bias="0.5"/>
+    <TextView
+            android:text="Perk List"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="1584dp"
+            app:layout_constraintHorizontal_bias="0.501"
+    />
+    <TextView
+                android:text="Map Blueprint"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="396dp"
+                app:layout_constraintHorizontal_bias="0.5"/>
+    <TextView
+            android:text="Terminus"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="36dp"
+            app:layout_constraintHorizontal_bias="0.5"/>
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="275dp" app:srcCompat="@drawable/libertyfalls" android:id="@+id/imageView13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"/>
+    <ImageView
+                android:layout_width="300dp"
+                android:layout_height="275dp" app:srcCompat="@drawable/libertyfallsblueprint"
+                android:id="@+id/imageView19"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="520dp"
+                app:layout_constraintHorizontal_bias="0.5"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
