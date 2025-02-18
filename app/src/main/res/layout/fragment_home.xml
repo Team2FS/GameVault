@@ -5,29 +5,26 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
         tools:context=".ui.home.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/frameLayout">
-
-        <!-- Welcome Message -->
-
-        <!-- Progress Cards Section -->
         <TextView
                 android:id="@+id/welcome_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome back!"
-                android:textSize="35sp"
+                android:text="Tracked Challenges"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginTop="32dp"
                 android:gravity="center"
+
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_progress"
                 android:layout_width="match_parent"
