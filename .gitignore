@@ -16,3 +16,8 @@ local.properties
 /.idea/vcs.xml
 /.idea
 gradle
+.idea/
+/app/src/main/res/values-land/dimens.xml
+/app/src/main/res/values-w600dp/dimens.xml
+/app/src/main/res/values-w1240dp/dimens.xml
+/app/src/main/res/values-v23/themes.xml

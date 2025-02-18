@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieMaps.bo6ZombieLibertyFallsActivity"
+        android:background="@color/black">
+
+
+    <TextView
+            android:text="About the map"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="836dp"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <TextView
+            android:text="Perk List"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="1372dp"
+            app:layout_constraintHorizontal_bias="0.501"/>
+    <TextView
+            android:text="Map Blueprint"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="396dp"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <TextView
+            android:text="Liberty Falls"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="36dp"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="275dp" app:srcCompat="@drawable/libertyfalls" android:id="@+id/imageView13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"/>
+    <TextView
+            android:text="Liberty Falls is a desolate and eerie town swallowed by the relentless march of time and the horrors of the undead. Once a symbol of American prosperity, the town now stands as a decaying monument to a forgotten past, where flickering streetlights cast long shadows over cracked pavement and abandoned buildings. A perpetual mist clings to the air, carrying distant echoes of what once was—laughter, music, and life—all replaced by the unrelenting groans of the cursed.  The town is steeped in mystery, its very foundations corrupted by an unseen force that has twisted reality itself. Spectral anomalies flicker in the periphery, suggesting that time in Liberty Falls is fractured, looping in an endless cycle of its own demise. The remnants of its former residents now wander aimlessly, their bodies mutilated by the infection that has claimed them. Some appear in tattered work uniforms, their hollow eyes reflecting the last moments of their tragic fate.  Despite its haunting silence, the town is alive in ways beyond the physical. The air crackles with an unnatural energy, and strange symbols—burned into the walls and streets—suggest an experiment or ritual gone terribly wrong. Whispers ride the wind, unintelligible yet filled with warning, as if the town itself remembers its suffering and pleads to be freed.  As players fight to survive in Liberty Falls, they are not just battling the undead—they are uncovering a buried truth, one that threatens to consume everything in its path. The question is not just how to escape, but whether the town will ever let them go."
+            android:layout_width="435dp"
+            android:layout_height="433dp"
+            android:id="@+id/textView24"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="924dp"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <TextView
+            android:text="In the &quot;Liberty Falls&quot; Zombies map of Call of Duty: Black Ops 6, players can enhance their abilities by acquiring various Perk-a-Colas. Here's a list of the available perks:  Jugger-Nog: Increases maximum health, allowing players to withstand more damage before being downed.  Quick Revive: Speeds up the process of reviving downed teammates; in solo play, it can self-revive the player.  Speed Cola: Decreases reload times, enabling faster weapon handling.  Stamin-Up: Enhances sprint speed and duration, allowing for quicker movement across the map.  Deadshot Daiquiri: Improves aiming by reducing hip-fire spread and snapping the aim to enemy heads for increased precision.  Elemental Pop: Grants a chance for bullets to trigger random alternate ammo types, adding elemental effects to shots.  PhD Flopper: Negates self-inflicted explosive damage and triggers an explosive blast upon diving to prone.  Mule Kick: Allows players to carry an additional primary weapon, increasing their arsenal.  Tombstone Soda: Upon being downed, players can revive themselves with their weapons and perks intact, provided they reach their tombstone in time.  Vulture Aid: Displays item locations and causes zombies to drop small ammo and point pickups upon death.  These perks are strategically located throughout the Liberty Falls map, often in key areas that require exploration and point investment to access. Acquiring and utilizing these perks effectively can significantly enhance a player's survivability and combat efficiency against the relentless zombie hordes."
+            android:layout_width="401dp"
+            android:layout_height="492dp"
+            android:textColor="@color/white"
+            android:id="@+id/textView25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="1456dp"
+    />
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="275dp" app:srcCompat="@drawable/libertyfallsblueprint"
+            android:id="@+id/imageView19"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="520dp"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
