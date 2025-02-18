@@ -29,7 +29,7 @@ public class CustomAdapterFavorites extends RecyclerView.Adapter<CustomAdapterFa
     @Override
     public void onBindViewHolder(CustomAdapterFavorites.ViewHolder holder, int position) {
         ChallengeCard challengeCard = data.get(position);
-        holder.imageView.setImageResource(R.mipmap.gun_placeholder);
+        holder.imageView.setImageResource(challengeCard.getImageId());
 
         holder.textViewTitle.setText(challengeCard.getCamoName());
         holder.textViewDescription.setText(challengeCard.getCamoDescription());
@@ -40,7 +40,7 @@ public class CustomAdapterFavorites extends RecyclerView.Adapter<CustomAdapterFa
         holder.progressBar.setProgress(challengeCard.getCurrentNumAchieved());
 
         Glide.with(holder.imageView.getContext())
-                .load(challengeCard.getImageName())
+                .load(challengeCard.getImageId())
                 .into(holder.imageView);
 
 

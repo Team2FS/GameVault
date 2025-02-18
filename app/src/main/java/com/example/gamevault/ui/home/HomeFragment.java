@@ -83,17 +83,10 @@ public class HomeFragment extends Fragment {
         List<ChallengeCard> challengeCards = new ArrayList<>();
 
         // Create dummy challenge cards
-        for (int i = 0; i < 3; i++) {
-            ChallengeCard tempChallengeCard = new ChallengeCard(
-                    "gun_placeholder",
-                    "Challenge" + (i + 1),
-                    "Get 20 Headshot Kills",
-                    20,
-                    i * 5,
-                    true
-            );
-            challengeCards.add(tempChallengeCard);
-        }
+        challengeCards.add(new ChallengeCard(R.drawable.aek_973, "Challenge 1", "Get 20 Headshot Kills", 20, 5, true));
+        challengeCards.add(new ChallengeCard(R.drawable.ak_74, "Challenge 2", "Get 30 Kills with SMG", 30, 10, false));
+        challengeCards.add(new ChallengeCard(R.drawable.ames_85, "Challenge 3", "Use a sniper for 15 kills", 15, 3, true));
+
 
         // Set adapter only if RecyclerView is initialized
         if (recyclerViewFavorites != null) {
@@ -243,7 +236,7 @@ public class HomeFragment extends Fragment {
 
     }
     public static class ChallengeCard { // use a model to define one single article the use the object properties to fill the card
-        private String imageName;
+        private Integer imageId;
         private String camoName;
         private String camoDescription;
         private int numRequired;
@@ -252,8 +245,8 @@ public class HomeFragment extends Fragment {
 
 
 
-        public ChallengeCard(String imageName, String camoName, String camoDescription, int numRequired, int currentNumAchieved, boolean isFavourite) {
-            this.imageName = imageName;
+        public ChallengeCard(Integer imageId, String camoName, String camoDescription, int numRequired, int currentNumAchieved, boolean isFavourite) {
+            this.imageId = imageId;
             this.camoName = camoName;
             this.camoDescription = camoDescription;
             this.numRequired = numRequired;
@@ -261,8 +254,8 @@ public class HomeFragment extends Fragment {
             this.isFavourite = isFavourite;
         }
 
-    public String getImageName() {
-            return imageName;
+    public Integer getImageId() {
+            return imageId;
     }
     public String getCamoName() {
             return camoName;
@@ -279,28 +272,28 @@ public class HomeFragment extends Fragment {
     public boolean isFavourite() {
             return isFavourite;
     }
-        public void setCamoName(String camoName) {
-            this.camoName = camoName;
-        }
+    public void setCamoName(String camoName) {
+        this.camoName = camoName;
+    }
 
-        public void setCamoDescription(String camoDescription) {
-            this.camoDescription = camoDescription;
-        }
+    public void setCamoDescription(String camoDescription) {
+        this.camoDescription = camoDescription;
+    }
 
-        public void setImageName(String imageName) {
-            this.imageName = imageName;
-        }
+    public void setImageId(Integer imageId) {
+        this.imageId = imageId;
+    }
 
-        public void setNumRequired(int numRequired) {
-            this.numRequired = numRequired;
-        }
+    public void setNumRequired(int numRequired) {
+        this.numRequired = numRequired;
+    }
 
-        public void setCurrentNumAchieved(int currentNumAchieved) {
-            this.currentNumAchieved = currentNumAchieved;
-        }
+    public void setCurrentNumAchieved(int currentNumAchieved) {
+        this.currentNumAchieved = currentNumAchieved;
+    }
 
-        public void setFavourite(boolean isFavourite) {
-            this.isFavourite = isFavourite;
-        }
+    public void setFavourite(boolean isFavourite) {
+        this.isFavourite = isFavourite;
+    }
     }
 }
