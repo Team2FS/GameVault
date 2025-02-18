@@ -1,5 +1,6 @@
 package com.example.gamevault.ui.gamemode;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 import android.widget.ImageView;
 import android.widget.Button;
 
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.activity.OnBackPressedCallback;
@@ -15,6 +17,9 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import com.example.gamevault.R;
+import com.example.gamevault.ui.CallOfDutyBo6.bo6MainActivity;
+import com.example.gamevault.ui.CallOfDutyBo6.bo6ZombieMainActivity;
+import com.example.gamevault.ui.CallOfDutyWarzone.warzoneMainActivity;
 
 public class GameModeFragment extends Fragment {
 
@@ -58,9 +63,24 @@ public class GameModeFragment extends Fragment {
         Button warzoneButton = view.findViewById(R.id.btn_warzone);
 
         // Handle button clicks (Toast shows Mode instead of Game)
-        multiplayerButton.setOnClickListener(v -> showMessage("Selected: Multiplayer"));
-        zombiesButton.setOnClickListener(v -> showMessage("Selected: Zombies"));
-        warzoneButton.setOnClickListener(v -> showMessage("Selected: Warzone"));
+        multiplayerButton.setOnClickListener(v -> {
+            Toast.makeText(getActivity(), "Selected: Multiplayer", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity(), bo6MainActivity.class);
+            startActivity(intent);
+        });
+
+        zombiesButton.setOnClickListener(v -> {
+            Toast.makeText(getActivity(), "Selected: Zombies", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity(), bo6ZombieMainActivity.class);
+            startActivity(intent);
+        });
+
+        warzoneButton.setOnClickListener(v -> {
+            Toast.makeText(getActivity(), "Selected: Warzone", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity(), warzoneMainActivity.class);
+            startActivity(intent);
+        });
+        
 
         // Hide buttons if mode isn't available
         if (!gameSupportsZombies(gameTitle)) {
@@ -69,6 +89,9 @@ public class GameModeFragment extends Fragment {
         if (!gameSupportsWarzone(gameTitle)) {
             warzoneButton.setVisibility(View.GONE);
         }
+
+
+
     }
 
     private void showMessage(String message) {

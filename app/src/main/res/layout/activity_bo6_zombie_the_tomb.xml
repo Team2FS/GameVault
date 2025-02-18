@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.CallOfDutyBo6.bo6ZombieCamos.bo6ZombieExtras.bo6ZombieMaps.bo6ZombieLibertyFallsActivity"
+            android:background="@color/black">
+        <TextView
+                android:text="The Tomb is the fourth Zombies map in Call of Duty: Black Ops 6, released in Season 2. Set in an ancient underground excavation site along the Mediterranean coast, this eerie and claustrophobic location is buried beneath the ruins of a lost civilization. Following the events of Citadelle des Morts, Requiem operatives Weaver, Grey, Carver, and Maya venture deep into the tomb in search of the Sentinel Artifact, guided by the cryptic final words of Gabriel Krafft. As players explore the long-forgotten crypt, they traverse dimly lit tunnels, massive stone chambers, and burial sites adorned with ancient carvings. Flickering torches cast ominous shadows against the walls, while glowing arcane symbols hint at supernatural forces lurking within. The tomb is a maze of narrow corridors, hidden passageways, and treacherous traps, including arrow launchers, spike pits, and collapsing bridges that can be both dangerous and strategically useful. In certain sections, flooded tunnels and caved-in pathways force players to find alternate routes while fending off relentless waves of undead.
+
+The gameplay is packed with classic and new mechanics, featuring the Staff of Ice, a reworked elemental Wonder Weapon obtainable through in-game challenges that allows players to freeze and shatter zombies. To access the Pack-a-Punch machine, players must unlock the Doorway to Nowhere, a hidden chamber deep within the tomb. Alongside traditional zombies, players must also fight armored undead and Shock Mimics, elite creatures that unleash devastating electric attacks. A multi-step Easter egg quest leads players through ancient puzzles, artifact retrieval, and an intense boss battle that unveils the tomb’s darkest secrets.
+
+With its claustrophobic corridors, deadly environmental hazards, and high-intensity combat, The Tomb delivers a fast-paced, atmospheric Zombies experience that blends mystery, ancient lore, and supernatural horror. The map's intricate design, strategic gameplay, and engaging Easter eggs make it a highly replayable and immersive addition to Black Ops 6, appealing to both veteran and new players alike."
+                android:layout_width="446dp"
+                android:layout_height="590dp"
+                android:id="@+id/textView14"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                android:layout_marginTop="52dp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="About the map"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="836dp"
+                app:layout_constraintHorizontal_bias="0.5"/>
+        <TextView
+                android:text="Perk List"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="1572dp"
+                app:layout_constraintHorizontal_bias="0.501"/>
+        <TextView
+                android:text="Map Blueprint"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="396dp"
+                app:layout_constraintHorizontal_bias="0.5"/>
+        <TextView
+                android:text="The Tomb"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView23"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="40dp"
+                app:layout_constraintHorizontal_bias="0.498"/>
+        <TextView
+                android:text="
+Perks Available:
+1.PhD Flopper: Located near the Neolithic Catacombs gate, on the southern side of the Dig Site (spawn area).
+
+2.Deadshot Daiquiri: Found at the entrance of the Neolithic Catacombs area, easily visible upon entry.
+
+3.Speed Cola: Situated in the southernmost part of the Ossuary, near the gate leading to the Subterranean Temple.
+
+4.Quick Revive: Located behind the altar in the Subterranean Temple area, on the opposite end of the map.
+
+5.Stamin-Up: Positioned within the Shrine of Hierophants, facing a GobbleGum Machine.
+
+6.Death Perception: Can be found near the entrance of the Tombs area, close to the Tanto .22 weapon wall buy and an Ammo Cache.
+
+7. Jugger-Nog: Located in the Dark Aether Nexus, atop a rock formation near the yellow portal leading to the Shrine of Hierophants."
+                android:layout_width="447dp"
+                android:layout_height="558dp"
+                android:id="@+id/textView24"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                android:layout_marginTop="48dp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="275dp" app:srcCompat="@drawable/thetomb" android:id="@+id/imageView5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="92dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

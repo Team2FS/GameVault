@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6MultiplayerExtras.bo6WeaponsList.bo6WeaponsListActivity"
+            android:background="@color/black">
+
+        <TextView
+                android:text="CIGMA 2B"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cigma2bText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView45"
+                android:layout_marginTop="25dp"/>
+        <TextView
+                android:text="HE - 1"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/he1Text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView46"/>
+        <TextView
+                android:text="Launchers"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/smgsZombieText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="75dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cigma_2b"
+                android:id="@+id/imageView45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="200dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/he_1"
+                android:id="@+id/imageView46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView45"
+                android:layout_marginTop="100dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
