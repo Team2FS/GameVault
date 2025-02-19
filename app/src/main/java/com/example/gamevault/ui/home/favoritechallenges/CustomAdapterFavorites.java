@@ -55,6 +55,14 @@ public class CustomAdapterFavorites extends RecyclerView.Adapter<CustomAdapterFa
             challengeCard.setCurrentNumAchieved(newProgress);
             holder.progressText.setText(newProgress + "/" + challengeCard.getNumRequired() + " Completed");
             holder.progressBar.setProgress(newProgress);
+
+            if (challengeCard.getCurrentNumAchieved() == challengeCard.getNumRequired()) {
+                holder.checkMarkIcon.setColorFilter(0xFF00FF00);
+            }
+            else {
+                holder.checkMarkIcon.setColorFilter(0xFFFFFFFF);
+            }
+
         });
 
         holder.addButton.setOnClickListener(v -> {
@@ -62,6 +70,14 @@ public class CustomAdapterFavorites extends RecyclerView.Adapter<CustomAdapterFa
             challengeCard.setCurrentNumAchieved(newProgress);
             holder.progressText.setText(newProgress + "/" + challengeCard.getNumRequired() + " Completed");
             holder.progressBar.setProgress(newProgress);
+
+            if (challengeCard.getCurrentNumAchieved() == challengeCard.getNumRequired()) {
+                holder.checkMarkIcon.setColorFilter(0xFF00FF00);
+            }
+            else {
+                holder.checkMarkIcon.setColorFilter(0xFFFFFFFF);
+            }
+
         });
 
         // Handle favorite icon toggle
@@ -72,6 +88,13 @@ public class CustomAdapterFavorites extends RecyclerView.Adapter<CustomAdapterFa
             } else {
                 holder.favoriteIcon.setColorFilter(0xFFFFFFFF);
             }
+        });
+
+        holder.checkMarkIcon.setOnClickListener(v -> {
+            challengeCard.setCurrentNumAchieved(challengeCard.getNumRequired());
+            holder.progressBar.setProgress(challengeCard.getNumRequired());
+            holder.progressText.setText(challengeCard.getNumRequired() + "/" + challengeCard.getNumRequired() + " Completed");
+            holder.checkMarkIcon.setColorFilter(0xFF00FF00);
         });
     }
 
