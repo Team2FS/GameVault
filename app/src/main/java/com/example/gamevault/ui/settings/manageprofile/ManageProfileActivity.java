@@ -171,7 +171,7 @@ public class ManageProfileActivity extends AppCompatActivity {
                         String bio = documentSnapshot.getString("bio");
 
                         if (currentImageUrl != null && !currentImageUrl.isEmpty()) {
-                            Glide.with(this).load(currentImageUrl).into(profileImage);
+                            Glide.with(this).load(currentImageUrl).circleCrop().into(profileImage);
                         }
                         if (username != null) etUsername.setText(username);
                         if (phone != null) etPhone.setText(phone);
