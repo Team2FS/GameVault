@@ -36,7 +36,7 @@ public class ManageProfileActivity extends AppCompatActivity {
     private FirebaseFirestore firestore;
     private StorageReference storageReference;
     private String currentImageUrl = null; // Stores the existing image URL
-    private EditText etUsername, etPhone, etEmail;
+    private EditText etUsername, etPhone, etEmail, etBio;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -59,6 +59,7 @@ public class ManageProfileActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPhone = findViewById(R.id.etPhone);
         etEmail = findViewById(R.id.etEmail);
+        etBio = findViewById(R.id.etBio);
 
         // Initialize Firebase services
         firestore = FirebaseFirestore.getInstance();
@@ -103,6 +104,7 @@ public class ManageProfileActivity extends AppCompatActivity {
         String username = etUsername.getText().toString().trim();
         String phone = etPhone.getText().toString().trim();
         String email = etEmail.getText().toString().trim();
+        String bio = etBio.getText().toString().trim();
 
         // Ensure either an image is selected or an existing image is available
         if (imageUri == null && currentImageUrl == null) {
@@ -112,19 +114,19 @@ public class ManageProfileActivity extends AppCompatActivity {
 
         // If a new image is selected, upload it, otherwise just save text fields
         if (imageUri != null) {
-            uploadImageToFirebase(user.getUid(), username, phone, email);
+            uploadImageToFirebase(user.getUid(), username, phone, email, bio);
         } else {
-            saveProfileToFirestore(user.getUid(), currentImageUrl, username, phone, email);
+            saveProfileToFirestore(user.getUid(), currentImageUrl, username, phone, email, bio);
         }
     }
 
-    private void uploadImageToFirebase(String userId, String username, String phone, String email) {
+    private void uploadImageToFirebase(String userId, String username, String phone, String email, String bio) {
         StorageReference fileReference = storageReference.child(userId + ".jpg");
 
         fileReference.putFile(imageUri)
                 .addOnSuccessListener(taskSnapshot -> fileReference.getDownloadUrl().addOnSuccessListener(uri -> {
                     String imageUrl = uri.toString();
-                    saveProfileToFirestore(userId, imageUrl, username, phone, email);
+                    saveProfileToFirestore(userId, imageUrl, username, phone, email, bio);
                 }))
                 .addOnFailureListener(e -> {
                     Log.e("ManageProfile", "Error uploading image", e);
@@ -132,12 +134,13 @@ public class ManageProfileActivity extends AppCompatActivity {
                 });
     }
 
-    private void saveProfileToFirestore(String userId, String imageUrl, String username, String phone, String email) {
+    private void saveProfileToFirestore(String userId, String imageUrl, String username, String phone, String email, String bio) {
         Map<String, Object> profileData = new HashMap<>();
         profileData.put("imageUrl", imageUrl);
         profileData.put("username", username);
         profileData.put("phone", phone);
         profileData.put("email", email);
+        profileData.put("bio", bio);
 
         firestore.collection("users")
                 .document(userId)
@@ -165,6 +168,7 @@ public class ManageProfileActivity extends AppCompatActivity {
                         String username = documentSnapshot.getString("username");
                         String phone = documentSnapshot.getString("phone");
                         String email = documentSnapshot.getString("email");
+                        String bio = documentSnapshot.getString("bio");
 
                         if (currentImageUrl != null && !currentImageUrl.isEmpty()) {
                             Glide.with(this).load(currentImageUrl).into(profileImage);
@@ -172,6 +176,7 @@ public class ManageProfileActivity extends AppCompatActivity {
                         if (username != null) etUsername.setText(username);
                         if (phone != null) etPhone.setText(phone);
                         if (email != null) etEmail.setText(email);
+                        if (bio != null) etBio.setText(bio);
                     }
                 })
                 .addOnFailureListener(e -> Log.e("ManageProfile", "Error loading profile", e));

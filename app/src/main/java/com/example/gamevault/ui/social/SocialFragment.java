@@ -104,7 +104,7 @@ public class SocialFragment extends Fragment {
                                 .load(imageUrl)
                                 .placeholder(android.R.drawable.ic_menu_gallery)
                                 .error(android.R.drawable.ic_menu_report_image)
-                                .circleCrop() // Ensure circular crop
+                                .circleCrop()
                                 .into(profilePicture);
                     }
                 }
