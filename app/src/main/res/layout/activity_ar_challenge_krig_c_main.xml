@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeKrigCMainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/black" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="4dp" app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/xm4granitelayout">
+
+        <!-- Weapon Image -->
+
+        <!-- Title -->
+        <ImageView
+                android:layout_width="390dp"
+                android:layout_height="130dp" app:srcCompat="@drawable/xm4_5headshots_granite"
+                android:id="@+id/xm4graniteimage"/>
+
+        <!-- Description -->
+
+        <!-- Favorite & Check Icons -->
+        <TextView
+                android:id="@+id/xm4granitetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Granite"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"/>
+        <TextView
+                android:id="@+id/xm4granitedesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get 5 Headshot Kills"
+                android:textColor="#CCCCCC"
+                android:textSize="14sp"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/xm4graniteheadshotbar">
+
+            <ImageView
+                    android:id="@+id/xm4granitesubtract"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/remove_foreground"
+                    android:tint="@color/white"/>
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                    android:id="@+id/xm4graniteprogressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:progress="50"
+                    android:max="100"
+                    android:layout_marginTop="0dp"
+                    android:progressTint="#FFD700"
+                    android:background="#555555"/>
+
+            <ImageView
+                    android:id="@+id/xm4graniteadd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_add"
+                    android:tint="@color/white"/>
+
+        </LinearLayout>
+        <!-- Completion Text -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/heart_foreground"
+                    android:id="@+id/xm4granitefavbtn"
+                    android:layout_weight="1"
+                    android:tint="#FFFF"/>
+            <TextView
+                    android:id="@+id/xm4graniteprogresstext"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="0/5 Completed"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:layout_marginTop="0dp"
+                    android:textAlignment="center"/>
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/check_mark_foreground"
+                    android:id="@+id/xm4granitecheckbtn"
+                    android:layout_weight="1"
+                    android:tint="@color/white"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="390dp"
+                android:layout_height="130dp" app:srcCompat="@drawable/xm4_10headshots_woodland"
+                android:id="@+id/xm4woodlandimage"/>
+        <TextView
+                android:id="@+id/xm4woodlandtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Woodland"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"/>
+        <TextView
+                android:id="@+id/xm4woodlanddesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get 10 Headshot Kills"
+                android:textColor="#CCCCCC"
+                android:textSize="14sp"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" android:id="@+id/xm4woodlandheadshotbar">
+
+            <ImageView
+                    android:id="@+id/xm4woodlandsubtract"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/remove_foreground"
+                    android:tint="@color/white"/>
+            <!-- Progress Bar -->
+            <ProgressBar
+                    android:id="@+id/xm4woodlandprogressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:progress="50"
+                    android:max="100"
+                    android:layout_marginTop="0dp"
+                    android:progressTint="#FFD700"
+                    android:background="#555555"/>
+
+            <ImageView
+                    android:id="@+id/xm4woodlandadd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_add"
+                    android:tint="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/heart_foreground"
+                    android:id="@+id/xm4woodlandfavbtn"
+                    android:layout_weight="1"
+                    android:tint="#FFFF"/>
+            <TextView
+                    android:id="@+id/xm4woodlandprogresstext"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="0/10 Completed"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:layout_marginTop="0dp"
+                    android:textAlignment="center"/>
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/check_mark_foreground"
+                    android:id="@+id/xm4woodlandcheckbtn"
+                    android:layout_weight="1"
+                    android:tint="@color/white"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="390dp"
+                android:layout_height="130dp" app:srcCompat="@drawable/xm4_15headshots_savanna"
+                android:id="@+id/xm4savannaimage"/>
+        <TextView
+                android:id="@+id/xm4savannatitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Savanna"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"/>
+        <TextView
+                android:id="@+id/xm4savannadesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get 15 Headshot Kills"
+                android:textColor="#CCCCCC"
+                android:textSize="14sp"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/xm4splinterheadshotbar">
+
+            <ImageView
+                    android:id="@+id/xm4splintersubtract"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/remove_foreground"
+                    android:tint="@color/white"/>
+            <!-- Progress Bar -->
+            <ProgressBar
+                    android:id="@+id/xm4splinterprogressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:progress="50"
+                    android:max="100"
+                    android:layout_marginTop="0dp"
+                    android:progressTint="#FFD700"
+                    android:background="#555555"/>
+
+            <ImageView
+                    android:id="@+id/xm4splinteradd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_add"
+                    android:tint="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/heart_foreground"
+                    android:id="@+id/xm4savannafavbtn"
+                    android:layout_weight="1"
+                    android:tint="#FFFF"/>
+            <TextView
+                    android:id="@+id/xm4savannaprogresstext"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="0/15 Completed"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:layout_marginTop="0dp"
+                    android:textAlignment="center"/>
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/check_mark_foreground"
+                    android:id="@+id/xm4savannacheckbtn"
+                    android:layout_weight="1"
+                    android:tint="@color/white"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="390dp"
+                android:layout_height="130dp" app:srcCompat="@drawable/xm4_20headshots_splinter"
+                android:id="@+id/xm4splinterimage"/>
+        <TextView
+                android:id="@+id/xm4splintertitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Woodland"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"/>
+        <TextView
+                android:id="@+id/xm4splinterdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get 20 Headshot Kills"
+                android:textColor="#CCCCCC"
+                android:textSize="14sp"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/xm4savannaheadshotbar">
+
+            <ImageView
+                    android:id="@+id/xm4savannasubtract"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/remove_foreground"
+                    android:tint="@color/white"/>
+            <!-- Progress Bar -->
+            <ProgressBar
+                    android:id="@+id/xm4savannaprogressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:progress="50"
+                    android:max="100"
+                    android:layout_marginTop="0dp"
+                    android:progressTint="#FFD700"
+                    android:background="#555555"/>
+
+            <ImageView
+                    android:id="@+id/xm4savannaadd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_add"
+                    android:tint="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/heart_foreground"
+                    android:id="@+id/xm4splinterfavbtn"
+                    android:layout_weight="1"
+                    android:tint="#FFFF"/>
+            <TextView
+                    android:id="@+id/xm4splinterprogresstext"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="0/20 Completed"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:layout_marginTop="0dp"
+                    android:textAlignment="center"/>
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/check_mark_foreground"
+                    android:id="@+id/xm4splintercheckbtn"
+                    android:layout_weight="1"
+                    android:tint="@color/white"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView11"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
