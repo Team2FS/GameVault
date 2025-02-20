@@ -62,6 +62,7 @@ public class DashboardFragment extends Fragment {
                         Glide.with(this)
                                 .load(imageUrl)
                                 .placeholder(android.R.drawable.ic_menu_gallery)
+                                .circleCrop()
                                 .error(android.R.drawable.ic_menu_report_image)
                                 .into(binding.profileImageView);
                     }

@@ -2,6 +2,7 @@ package com.example.gamevault.ui.social;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,8 +68,10 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         //click listener for username textView
         holder.username.setOnClickListener(view -> {
             Intent intent = new Intent(context, UserProfileActivity.class);
+            Log.d("PostDebug", "Username: " + post.getUsername());
             intent.putExtra("userId", post.getUserId());
             context.startActivity(intent);
+
         });
 
         // Load post image if exists
