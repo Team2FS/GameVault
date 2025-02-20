@@ -17,7 +17,6 @@ public class bo6AssaultRiflesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_bo6_assault_rifles);
 
         //xm4 clickable image
@@ -28,7 +27,7 @@ public class bo6AssaultRiflesActivity extends AppCompatActivity {
 
         xm4ImageClickable.setOnClickListener(view -> {
 
-            Intent intent = new Intent(bo6AssaultRiflesActivity.this, ArChallengeXM4MainActivity.class);
+            Intent intent = new Intent(this, ArChallengeXM4MainActivity.class);
 
             startActivity(intent);
 
