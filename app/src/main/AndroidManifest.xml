@@ -97,6 +97,9 @@
             android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6SMGSActivity"
             android:exported="false" />
         <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeXM4MainActivity"
+                android:exported="false" />
+        <activity
                 android:name=".ui.settings.BuyUsACoffee.BuyUsACoffee"
                 android:exported="false"/>
         <activity
