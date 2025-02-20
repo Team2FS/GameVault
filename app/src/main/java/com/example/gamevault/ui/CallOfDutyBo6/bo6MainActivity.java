@@ -116,8 +116,6 @@ public class bo6MainActivity extends AppCompatActivity {
 
 
 
-
-
         EdgeToEdge.enable(this);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (view, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
