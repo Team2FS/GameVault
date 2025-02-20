@@ -123,6 +123,35 @@
                 android:name=".ui.settings.credits.Credits"
                 android:exported="false"/>
         <activity android:name=".ui.social.UserProfileActivity"/>
+
+
+        <!-- AR declarations -->
+
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeXM4MainActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeModelLMainActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeKrigCMainActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeAMES85MainActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeASVALMainActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeAK74MainActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeGoblinMk2MainActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".ui.CallOfDutyBo6.bo6MultiplayerCamos.bo6WeaponChallenges.ArChallengeGPR91MainActivity"
+                android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
