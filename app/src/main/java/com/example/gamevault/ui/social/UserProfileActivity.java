@@ -29,7 +29,7 @@ public class UserProfileActivity extends AppCompatActivity {
 
         profileImageView = findViewById(R.id.profileImageView);
         usernameTextView = findViewById(R.id.usernameTextView);
-        /*bioTextView = findViewById(R.id.bioTextView);*/
+        bioTextView = findViewById(R.id.bioTextView);
 
         String userId = getIntent().getStringExtra("userId");
 
@@ -37,31 +37,30 @@ public class UserProfileActivity extends AppCompatActivity {
     }
 
     @SuppressLint("CheckResult")
-    private void loadUser (String userId) {
-        db.collection("Users").document(userId).get().addOnSuccessListener(documentSnapshot -> {
-            if(documentSnapshot.exists()) {
+    private void loadUser(String userId) {
+        db.collection("users").document(userId).get().addOnSuccessListener(documentSnapshot -> {
+            if (documentSnapshot.exists()) {
                 String username = documentSnapshot.getString("username");
-                String bio = documentSnapshot.getString("imageUrl");
+                String bio = documentSnapshot.getString("bio");
                 String imageUrl = documentSnapshot.getString("imageUrl");
 
                 usernameTextView.setText(username);
                 bioTextView.setText(bio);
 
-                if(imageUrl != null && !imageUrl.isEmpty()) {
+                if (imageUrl != null && !imageUrl.isEmpty()) {
                     Glide.with(this)
                             .load(imageUrl)
                             .placeholder(android.R.drawable.ic_menu_gallery)
                             .error(android.R.drawable.ic_menu_report_image)
                             .circleCrop()
                             .into(profileImageView);
-
-
                 }
             } else {
-                Toast.makeText(UserProfileActivity.this, "User not found", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "User not found", Toast.LENGTH_SHORT).show();
             }
         }).addOnFailureListener(e -> {
-            Toast.makeText(this, "User not found", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Failed to load profile: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         });
     }
+
 }
