@@ -83,9 +83,9 @@ public class HomeFragment extends Fragment {
         List<ChallengeCard> challengeCards = new ArrayList<>();
 
         // Create dummy challenge cards
-        challengeCards.add(new ChallengeCard(R.drawable.aek_973, "Challenge 1", "Get 20 Headshot Kills", 20, 5, true));
-        challengeCards.add(new ChallengeCard(R.drawable.ak_74, "Challenge 2", "Get 30 Kills with SMG", 30, 10, false));
-        challengeCards.add(new ChallengeCard(R.drawable.ames_85, "Challenge 3", "Use a sniper for 15 kills", 15, 3, true));
+        challengeCards.add(new ChallengeCard(R.drawable.aek_973, "Challenge 1", "Get 20 Headshot Kills", "AEK 973", "assault_rifles", 20, 5, true));
+        challengeCards.add(new ChallengeCard(R.drawable.ak_74, "Challenge 2", "Get 30 Kills with SMG","AK-74","assault_rifles", 30, 10, false));
+        challengeCards.add(new ChallengeCard(R.drawable.ames_85, "Challenge 3", "Use a sniper for 15 kills","AMES 85","assault_rifles", 15, 3, true));
 
 
         // Set adapter only if RecyclerView is initialized
@@ -239,16 +239,20 @@ public class HomeFragment extends Fragment {
         private Integer imageId;
         private String camoName;
         private String camoDescription;
+        private String gunName;
+        private String gunType;
         private int numRequired;
         private int currentNumAchieved;
         private boolean isFavourite;
 
 
 
-        public ChallengeCard(Integer imageId, String camoName, String camoDescription, int numRequired, int currentNumAchieved, boolean isFavourite) {
+        public ChallengeCard(Integer imageId, String camoName, String camoDescription, String gunName, String gunType, int numRequired, int currentNumAchieved, boolean isFavourite) {
             this.imageId = imageId;
             this.camoName = camoName;
             this.camoDescription = camoDescription;
+            this.gunName = gunName;
+            this.gunType = gunType;
             this.numRequired = numRequired;
             this.currentNumAchieved = currentNumAchieved;
             this.isFavourite = isFavourite;
@@ -262,6 +266,12 @@ public class HomeFragment extends Fragment {
     }
     public String getCamoDescription() {
             return camoDescription;
+    }
+    public String getGunName() {
+            return gunName;
+    }
+    public String getGunType() {
+            return gunType;
     }
     public int getNumRequired() {
             return numRequired;
