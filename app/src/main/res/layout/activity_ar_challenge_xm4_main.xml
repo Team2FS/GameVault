@@ -99,7 +99,9 @@
                     app:srcCompat="@drawable/heart_foreground"
                     android:id="@+id/xm4granitefavbtn"
                     android:layout_weight="1"
-                    android:tint="#FFFF"/>
+                    android:tint="#FFFF"
+                    android:clickable="true"
+                    android:focusable="true"/>
             <TextView
                     android:id="@+id/xm4graniteprogresstext"
                     android:layout_width="278dp"
@@ -115,7 +117,9 @@
                     app:srcCompat="@drawable/check_mark_foreground"
                     android:id="@+id/xm4granitecheckbtn"
                     android:layout_weight="1"
-                    android:tint="@color/white"/>
+                    android:tint="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"/>
         </LinearLayout>
         <ImageView
                 android:layout_width="390dp"
@@ -188,7 +192,9 @@
                     app:srcCompat="@drawable/heart_foreground"
                     android:id="@+id/xm4woodlandfavbtn"
                     android:layout_weight="1"
-                    android:tint="#FFFF"/>
+                    android:tint="#FFFF"
+                    android:clickable="true"
+                    android:focusable="true"/>
             <TextView
                     android:id="@+id/xm4woodlandprogresstext"
                     android:layout_width="278dp"
@@ -204,7 +210,9 @@
                     app:srcCompat="@drawable/check_mark_foreground"
                     android:id="@+id/xm4woodlandcheckbtn"
                     android:layout_weight="1"
-                    android:tint="@color/white"/>
+                    android:tint="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"/>
         </LinearLayout>
         <ImageView
                 android:layout_width="390dp"
@@ -278,7 +286,9 @@
                     app:srcCompat="@drawable/heart_foreground"
                     android:id="@+id/xm4savannafavbtn"
                     android:layout_weight="1"
-                    android:tint="#FFFF"/>
+                    android:tint="#FFFF"
+                    android:clickable="true"
+                    android:focusable="true"/>
             <TextView
                     android:id="@+id/xm4savannaprogresstext"
                     android:layout_width="278dp"
@@ -294,7 +304,9 @@
                     app:srcCompat="@drawable/check_mark_foreground"
                     android:id="@+id/xm4savannacheckbtn"
                     android:layout_weight="1"
-                    android:tint="@color/white"/>
+                    android:tint="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"/>
         </LinearLayout>
         <ImageView
                 android:layout_width="390dp"
@@ -367,7 +379,9 @@
                     app:srcCompat="@drawable/heart_foreground"
                     android:id="@+id/xm4splinterfavbtn"
                     android:layout_weight="1"
-                    android:tint="#FFFF"/>
+                    android:tint="#FFFF"
+                    android:clickable="true"
+                    android:focusable="true"/>
             <TextView
                     android:id="@+id/xm4splinterprogresstext"
                     android:layout_width="278dp"
@@ -383,7 +397,9 @@
                     app:srcCompat="@drawable/check_mark_foreground"
                     android:id="@+id/xm4splintercheckbtn"
                     android:layout_weight="1"
-                    android:tint="@color/white"/>
+                    android:tint="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"/>
         </LinearLayout>
         <ImageView
                 android:layout_width="match_parent"

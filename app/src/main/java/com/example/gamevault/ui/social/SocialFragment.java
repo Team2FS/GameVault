@@ -151,11 +151,7 @@ public class SocialFragment extends Fragment {
     }
 
     private void createPost() {
-        String content = postEditText.getText().toString().trim();
-        if (content.isEmpty()) {
-            Toast.makeText(getContext(), "Post content cannot be empty", Toast.LENGTH_SHORT).show();
-            return;
-        }
+        String content = postEditText.getText().toString().trim(); // Get the text content (can be empty)
 
         // Get the current user's ID
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -168,13 +164,19 @@ public class SocialFragment extends Fragment {
 
         // Get the profile picture URL using the callback
         getCurrentUserProfilePictureUrl(userId, new ProfilePictureCallback() {
-
             @Override
             public void onProfilePictureUrlLoaded(String profilePictureUrl, String username) {
-                // Create a post with the profile picture URL
+                // Check if there's an image or text to post
+                if (imageUri == null && content.isEmpty()) {
+                    Toast.makeText(getContext(), "Cannot post without text or image", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // If there's an image, upload it
                 if (imageUri != null) {
                     uploadImage(content, userId, profilePictureUrl, username);
                 } else {
+                    // If there's no image, create a text-only post
                     Post newPost = new Post(
                             null,
                             userId,
@@ -188,8 +190,8 @@ public class SocialFragment extends Fragment {
 
                     // Add the post to Firestore
                     db.collection("posts").add(newPost).addOnSuccessListener(documentReference -> {
-                        postEditText.setText("");
-                        imagePreview.setVisibility(View.GONE);
+                        postEditText.setText(""); // Clear the input field
+                        imagePreview.setVisibility(View.GONE); // Hide the image preview
                         Toast.makeText(getContext(), "Post added!", Toast.LENGTH_SHORT).show();
                     }).addOnFailureListener(e -> {
                         Toast.makeText(getContext(), "Failed to add post: " + e.getMessage(), Toast.LENGTH_SHORT).show();
